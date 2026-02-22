@@ -1,0 +1,2 @@
+# Modulation Schemes for Free Space Optical Communication
+This repository contains all GNU Radio flowgraphs, Matlab and python scripts that were used during the project. It also contains a documentation.
