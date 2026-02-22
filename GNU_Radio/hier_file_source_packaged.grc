@@ -1,0 +1,246 @@
+options:
+  parameters:
+    author: ''
+    catch_exceptions: 'True'
+    category: '[GRC Hier Blocks]'
+    cmake_opt: ''
+    comment: ''
+    copyright: ''
+    description: ''
+    gen_cmake: 'On'
+    gen_linking: dynamic
+    generate_options: hb
+    hier_block_src_path: '.:'
+    id: file_source_packaged
+    max_nouts: '0'
+    output_language: python
+    placement: (0,0)
+    qt_qss_theme: ''
+    realtime_scheduling: ''
+    run: 'True'
+    run_command: '{python} -u {filename}'
+    run_options: prompt
+    sizing_mode: fixed
+    thread_safe_setters: ''
+    title: File Source Packaged
+    window_size: (1000,1000)
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [8, 8]
+    rotation: 0
+    state: enabled
+
+blocks:
+- name: access_key
+  id: variable
+  parameters:
+    comment: ''
+    value: '''11100001010110101110100010010011'''
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [672, 12.0]
+    rotation: 0
+    state: enabled
+- name: hdr_format
+  id: variable
+  parameters:
+    comment: ''
+    value: digital.header_format_default(access_key, 0)
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [888, 12.0]
+    rotation: 0
+    state: enabled
+- name: blocks_tagged_stream_mux_0
+  id: blocks_tagged_stream_mux
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    lengthtagname: packet_len
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    ninputs: '2'
+    tag_preserve_head_pos: '0'
+    type: byte
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1056, 192.0]
+    rotation: 0
+    state: true
+- name: digital_crc32_bb_0
+  id: digital_crc32_bb
+  parameters:
+    affinity: ''
+    alias: ''
+    check: 'False'
+    comment: ''
+    lengthtagname: '"packet_len"'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    packed: 'True'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [544, 156.0]
+    rotation: 0
+    state: enabled
+- name: digital_protocol_formatter_bb_0
+  id: digital_protocol_formatter_bb
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    format: hdr_format
+    len_tag_key: '"packet_len"'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [800, 132.0]
+    rotation: 0
+    state: enabled
+- name: epy_block_0
+  id: epy_block
+  parameters:
+    FileName: file_name
+    Pkt_len: packet_length
+    _source_code: "import numpy as np\nfrom gnuradio import gr\nimport pmt\nimport\
+      \ os\nimport base64\nimport time\n\n\"\"\"\nState definitions\n    0   idle\n\
+      \    1   send preamble\n    2   send file data\n    3   send file name\n   \
+      \ 4   send post filler\n\"\"\"\n\nclass blk(gr.basic_block):\n    def __init__(self,\
+      \ FileName='None', Pkt_len=52):\n        gr.basic_block.__init__(\n        \
+      \    self,\n            name='EPB: File Source to Tagged Stream',\n        \
+      \    in_sig=None,\n            out_sig=[np.uint8]\n        )\n\n        self.FileName\
+      \ = FileName\n        self.Pkt_len = Pkt_len\n        self.state = 0\n     \
+      \   self.pre_count = 0\n        self._eof = False\n        self.pkt_num = 1\n\
+      \n        self.tx_buf = bytearray()\n\n        if os.path.exists(self.FileName):\n\
+      \            self.f_in = open(self.FileName, 'rb')\n            self.state =\
+      \ 1\n        else:\n            print(self.FileName, 'does not exist')\n   \
+      \         self._eof = True\n\n        # Preamble\n        self.char_list = [\n\
+      \            37,85,85,85,85,85,85,85,85,85,85,85,85,85,85,85,\n            85,85,85,85,85,85,85,85,85,85,85,85,85,85,85,85,\n\
+      \            85,85,85,85,85,85,85,85,85,85,85,85,85,85,85,85,\n            85,85,85,93\n\
+      \        ]\n        self.c_len = len(self.char_list)\n\n        # Filler\n \
+      \       self.filler = [\n            37,85,85,85,35,69,79,70,\n            85,85,85,85,85,85,85,85,\n\
+      \            85,85,85,85,85,85,85,85,\n            85,85,85,85,85,85,85,85,\n\
+      \            85,85,85,85,85,85,85,85,\n            85,85,85,85,85,85,85,85,\n\
+      \            85,85,85,93\n        ]\n        self.f_len = len(self.filler)\n\
+      \        self.t_start = time.time()\n\n    def _add_packet(self, payload):\n\
+      \        \"\"\"Append payload to tx buffer and tag it.\"\"\"\n        tag_offset\
+      \ = self.nitems_written(0) + len(self.tx_buf)\n        self.add_item_tag(\n\
+      \            0,\n            tag_offset,\n            pmt.intern(\"packet_len\"\
+      ),\n            pmt.from_long(len(payload))\n        )\n        self.tx_buf.extend(payload)\n\
+      \n    def general_work(self, input_items, output_items):\n\n        # Fill TX\
+      \ buffer if empty\n        while len(self.tx_buf) == 0 and self.state != 0:\n\
+      \n            if self.state == 1:\n                # Send preamble\n       \
+      \         self._add_packet(bytes(self.char_list))\n                self.pre_count\
+      \ += 1\n                if self.pre_count > 64:\n                    self.pre_count\
+      \ = 0\n                    self.state = 2\n                break\n\n       \
+      \     elif self.state == 2:\n                buff = self.f_in.read(self.Pkt_len)\n\
+      \                if len(buff) == 0:\n                    print(\"End of File\"\
+      )\n                    print(\"Time: \", time.time()-self.t_start)\n       \
+      \             print(\"Total payload packets: \", self.pkt_num-1) # lower pkt\
+      \ number by 1\n                    self.f_in.close()\n                    self.state\
+      \ = 3\n                    break\n\n                pkt_num_padded = str(self.pkt_num).zfill(6)\n\
+      \                pkt_num_frame = f\"[{pkt_num_padded}]\"\n                pkt_num_frame_encoded\
+      \ = pkt_num_frame.encode('utf-8')\n\n                encoded = pkt_num_frame_encoded\
+      \ + base64.b64encode(buff)\n                self._add_packet(encoded)\n\n  \
+      \              self.pkt_num += 1\n                break\n\n            elif\
+      \ self.state == 3:\n                name_bytes = self.FileName.encode('ascii')\n\
+      \                payload = bytes(self.filler[:8]) + name_bytes\n           \
+      \     self._add_packet(payload)\n                self.state = 4\n          \
+      \      break\n\n            elif self.state == 4:\n                self._add_packet(bytes(self.filler))\n\
+      \                self.pre_count += 1\n                if self.pre_count > 64:\n\
+      \                    self.pre_count = 0\n                    self.state = 0\n\
+      \                break\n\n        # Output only what fits\n        n = min(len(self.tx_buf),\
+      \ len(output_items[0]))\n        output_items[0][:n] = self.tx_buf[:n]\n   \
+      \     del self.tx_buf[:n]\n\n        self.consume(0, 0)\n\n        return n\n"
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+  states:
+    _io_cache: '(''EPB: File Source to Tagged Stream'', ''blk'', [(''FileName'', "''None''"),
+      (''Pkt_len'', ''52'')], [], [(''0'', ''byte'', 1)], '''', [''FileName'', ''Pkt_len''])'
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [16, 164.0]
+    rotation: 0
+    state: enabled
+- name: file_name
+  id: parameter
+  parameters:
+    alias: ''
+    comment: ''
+    hide: none
+    label: File Name
+    short_id: ''
+    type: str
+    value: '"./in.txt"'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [368, 12.0]
+    rotation: 0
+    state: enabled
+- name: packet_length
+  id: parameter
+  parameters:
+    alias: ''
+    comment: ''
+    hide: none
+    label: Packet Length
+    short_id: ''
+    type: intx
+    value: '60'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [512, 12.0]
+    rotation: 0
+    state: enabled
+- name: pad_sink_0
+  id: pad_sink
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    label: out
+    num_streams: '1'
+    optional: 'False'
+    type: byte
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1304, 192.0]
+    rotation: 0
+    state: enabled
+
+connections:
+- [blocks_tagged_stream_mux_0, '0', pad_sink_0, '0']
+- [digital_crc32_bb_0, '0', blocks_tagged_stream_mux_0, '1']
+- [digital_crc32_bb_0, '0', digital_protocol_formatter_bb_0, '0']
+- [digital_protocol_formatter_bb_0, '0', blocks_tagged_stream_mux_0, '0']
+- [epy_block_0, '0', digital_crc32_bb_0, '0']
+
+metadata:
+  file_format: 1
+  grc_version: 3.10.12.0
