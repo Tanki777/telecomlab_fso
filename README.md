@@ -15,7 +15,7 @@ This repository contains all GNU Radio flowgraphs, Matlab and python scripts tha
 If using one of the following flowgraphs ``pluto_bpsk_rx/tx.grc``, ``pluto_qpsk_rx/tx.grc`` or ``pluto_8psk_rx/tx.grc``, the received ``.tmp`` file must be post-processed to reconstruct the file data. For this, the script ``strip_preamble_mod.py`` can be used.  
 The original script is authored by duggabe (see [here](https://wiki.gnuradio.org/index.php?title=File_transfer_using_Packet_and_BPSK&oldid=14511)) and was modified.[^old_version]
 
-[^old_version]: dadda
+[^old_version]: Note that the GNU Radio tutorial was reworked and this link refers to the older version which was used in this project.
 
 **Usage:**
 ````
