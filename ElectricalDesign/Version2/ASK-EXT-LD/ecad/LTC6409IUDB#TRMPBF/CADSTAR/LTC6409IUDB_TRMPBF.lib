@@ -1,0 +1,16 @@
+.LTC6409IUDB_TRMPBF :1 ;High Speed Operational Amplifiers 10GHz GBW 1.1nV/rtHz Differential Amp
+LTC6409IUDBTRMPBF
+*STM IC
+*NGS
+*PLB 1="-OUT" 2="+IN" 3="'SHDN'" 4="V+_1" 5="VOCM" 6="-IN" 7="+OUT" 8="V-_1" 9="V+_2" 10="V-_2" 11="EP (V-)"
+*MXP 11
+*DFN LTC6409IUDB_TRMPBF
+~!Mouser Part Number (584-C6409IUDBTRMPBF)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Analog-Devices/LTC6409IUDBTRMPBF?qs=hVkxg5c3xu%252BCxcBUxz33zw%3D%3D)
+~!Manufacturer_Name (Analog Devices)
+~!Manufacturer_Part_Number (LTC6409IUDB#TRMPBF)
+~!Link Datasheet (https://www.analog.com/media/en/technical-documentation/data-sheets/6409fb.pdf)
+~!Height (0.85mm)
+~!3D_Model (LTC6409IUDB#TRMPBF)
+LTC6409IUDB_TRMPBF
+1.1!U 2.1!U 3.1!U 4.1!U 5.1!U 6.1!U 7.1!U 8.1!U 9.1!U 10.1!U 11.1!U 

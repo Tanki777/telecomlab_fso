@@ -1,0 +1,16 @@
+.CONSMA001-G :1 ;SMA Connector, Jack, 50 ohm, Threaded, 12.4 GHz, 1 Position, Printed Circuit Board, Board Mount, -65  165 C [-85  329 F], Solder, Straight, Brass
+CONSMA001G
+*STM J
+*NGS
+*PLB 1="1" 2="2" 3="3" 4="4" 5="5"
+*MXP 5
+*DFN CONSMA001-G
+~!Mouser Part Number (712-CONSMA001-G)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/TE-Connectivity-Linx-Technologies/CONSMA001-G?qs=W0r2Z67sYII1%2F%252BEN0FzKeQ%3D%3D)
+~!Manufacturer_Name (TE Connectivity)
+~!Manufacturer_Part_Number (CONSMA001-G)
+~!Link Datasheet (https://www.te.com/en/product-CONSMA001-G.html)
+~!Height (9.79mm)
+~!3D_Model (CONSMA001-G)
+CONSMA001-G
+1.1!U 2.1!U 3.1!U 4.1!U 5.1!U 

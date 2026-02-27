@@ -1,0 +1,16 @@
+.MAX40027ATC_VY-plus-T :1 ;Dual 280ps High-Speed Comparator, Ultra-Low Dispersion with LVDS Outputs
+SON50P200X300X80-13N
+*STM IC
+*NGS
+*PLB 1="GND_1" 2="IN1+" 3="IN1-" 4="GND_2" 5="IN2+" 6="IN2-" 7="VCC_1" 8="OUT2-" 9="OUT2+" 10="VCC_2" 11="OUT1-" 12="OUT1+" 13="EP"
+*MXP 13
+*DFN MAX40027ATC_VY-plus-T
+~!Mouser Part Number (700-MAX40027ATC/VY+T)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Analog-Devices-Maxim-Integrated/MAX40027ATC-VY%2bT?qs=vmHwEFxEFR8%252B9HSNBRNlvA%3D%3D)
+~!Manufacturer_Name (Analog Devices)
+~!Manufacturer_Part_Number (MAX40027ATC/VY+T)
+~!Link Datasheet (https://pdfserv.maximintegrated.com/en/ds/MAX40027.pdf)
+~!Height (0.8mm)
+~!3D_Model (MAX40027ATC_VY+T)
+MAX40027ATC_VY-plus-T
+1.1!U 2.1!U 3.1!U 4.1!U 5.1!U 6.1!U 13.1!U 12.1!U 11.1!U 10.1!U 9.1!U 8.1!U 7.1!U 

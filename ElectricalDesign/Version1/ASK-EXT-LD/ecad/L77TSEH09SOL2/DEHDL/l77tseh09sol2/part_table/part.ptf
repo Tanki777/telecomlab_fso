@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'L77TSEH09SOL2'
+CLASS = IO
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Amphenol Communications Solutions", "L77TSEH09SOL2" (!) = "", "L77TSEH09SOL2", "Other", "523-L77TSEH09SOL2", "https://www.mouser.co.uk/ProductDetail/Amphenol-Commercial-Products/L77TSEH09SOL2?qs=mq7kV%2Fq8lk7ZB3R56yxKcg%3D%3D", "Dsub, Stamped Signal 3A, Straight PCB Thru Hole Low Profile, Height=6.02mm (.237in), 9 Socket, Bright Tin Shell, Flash Gold, 4-40 Threaded Rear Insert", "https://cdn.amphenol-cs.com/media/wysiwyg/files/drawing/l77tsxhxxsol2.pdf", "12.12 mm"
+END_PART
+
+END.

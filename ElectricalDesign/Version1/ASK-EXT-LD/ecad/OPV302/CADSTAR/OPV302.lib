@@ -1,0 +1,16 @@
+.OPV302 :1 ;OPTEK TECHNOLOGY - OPV302 - LASER DIODE
+OPV302
+*STM D
+*NGS
+*PLB 1="VCSEL ANODE" 2="VCSEL CATHODE" 3="NO CONNECTION"
+*MXP 3
+*DFN OPV302
+~!Mouser Part Number (828-OPV302)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Optek-TT-Electronics/OPV302?qs=NVJATC80C48ntzd%252Borxscg%3D%3D)
+~!Manufacturer_Name (TT Electronics)
+~!Manufacturer_Part_Number (OPV302)
+~!Link Datasheet (https://componentsearchengine.com/Datasheets/1/OPV302.pdf)
+~!Height (6.604mm)
+~!3D_Model (OPV302)
+OPV302
+1.1!U 2.1!U 3.1!U 

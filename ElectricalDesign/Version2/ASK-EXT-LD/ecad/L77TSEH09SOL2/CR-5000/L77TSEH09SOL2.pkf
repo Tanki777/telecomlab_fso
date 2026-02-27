@@ -1,0 +1,10 @@
+(unit MM)
+
+(package "L77TSEH09SOL2"
+    (type UNDEF)
+    (uver 2)
+    (mountForm default
+        (footprintRef "L77TSEH09SOL2")
+        (spec "default")
+    )
+)

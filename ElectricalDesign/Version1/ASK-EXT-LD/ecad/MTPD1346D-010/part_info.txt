@@ -1,0 +1,9 @@
+Manufacturer=Marktech Optoelectronics
+PartNumber=MTPD1346D-010
+PartCategory=Diode
+PackageCategory=Other
+PinCount=3
+Version=1.2
+Released=2019-05-01 16:41:16
+Downloaded=2025-11-16 11:06:09
+3D=N

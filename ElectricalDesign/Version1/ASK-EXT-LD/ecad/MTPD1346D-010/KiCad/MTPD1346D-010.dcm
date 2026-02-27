@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP MTPD1346D-010
+D SENSOR PHOTODIODE 1300NM TO46-3
+K
+F http://www.marktechopto.com/pdf/products/datasheet/MTPD1346D-010.pdf
+$ENDCMP
+#
+#End Doc Library

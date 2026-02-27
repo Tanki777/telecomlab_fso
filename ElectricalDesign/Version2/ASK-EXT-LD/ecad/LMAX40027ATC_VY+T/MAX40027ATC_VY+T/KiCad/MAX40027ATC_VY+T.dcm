@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP MAX40027ATC_VY+T
+D Dual 280ps High-Speed Comparator, Ultra-Low Dispersion with LVDS Outputs
+K
+F https://pdfserv.maximintegrated.com/en/ds/MAX40027.pdf
+$ENDCMP
+#
+#End Doc Library

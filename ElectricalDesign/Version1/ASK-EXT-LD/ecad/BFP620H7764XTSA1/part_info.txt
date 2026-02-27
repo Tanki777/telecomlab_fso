@@ -1,0 +1,9 @@
+Manufacturer=Infineon
+PartNumber=BFP620H7764XTSA1
+PartCategory=Transistor BJT NPN
+PackageCategory=Other
+PinCount=4
+Version=1.2
+Released=2023-05-03 05:35:29
+Downloaded=2025-11-03 12:41:34
+3D=N

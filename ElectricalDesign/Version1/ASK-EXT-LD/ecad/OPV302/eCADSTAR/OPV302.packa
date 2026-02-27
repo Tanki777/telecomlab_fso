@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "OPV302"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2024-01-25-13:33:42)
+    (mountForm default
+        (footprintRef "OPV302")
+        (spec "System")
+    )
+)

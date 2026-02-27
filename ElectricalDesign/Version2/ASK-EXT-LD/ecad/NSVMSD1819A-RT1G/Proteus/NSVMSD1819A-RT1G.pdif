@@ -1,0 +1,142 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "NSVMSD1819A-RT1G"
+   (description "Available in 8 mm, 7-inch/3000 Unit Tape and Reel; Low VCE(sat), < 0.5 V; High hFE, 210-460; Moisture Sensitivity Level 1; ESD Protection: Human Body Model > 4000 V ESD Protection: Machine Model > 400 V; Pb-Free Package is Available; S and NSV Prefix for Automotive and Other Applications Requiring Unique Site and Control Change Requirements; AEC-Q101 Qualified and PPAP Capable")
+   (family "TRX")
+   (package "SOT65P220X100-3N")
+   (attribute "Datasheet Link" "https://www.onsemi.com/download/data-sheet/pdf/msd1819a-rt1-d.pdf")
+   (attribute "Geometry.Height" "1mm")
+   (attribute "Mouser Part Number" "")
+   (attribute "Mouser Price/Stock" "")
+   (attribute "Manufacturer_Name" "onsemi")
+   (attribute "Manufacturer_Part_Number" "NSVMSD1819A-RT1G")
+   (gate
+    (symbol "NSVMSD1819A-RT1G")
+    (pin "B" 1 PS)
+    (pin "E" 2 PS)
+    (pin "C" 3 PS)
+   )
+  )
+  (symbol "NSVMSD1819A-RT1G"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (circle (pt 400 150) (pt 300 -150))
+   )
+   (graphic
+    (stroke 20)
+    (path (pt 300 100) (pt 300 -100))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 300 50) (pt 400 150))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 300 -50) (pt 400 -150))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 400 -150) (pt 400 -200))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 400 150) (pt 400 200))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 100 0) (pt 300 0))
+   )
+   (graphic
+    (stroke 10)
+    (path (closed true) (pt 330 -100) (pt 350 -80) (pt 370 -120) (pt 330 -100))
+   )
+   (terminal
+    (body (symbol "PINSHORT") (pt 0 0) (rot 0) (mir 0) (visible true))
+    (name (pt 0 -20) (rot 0) (just TOP LEFT) (visible false))
+    (number (pt 0 20) (rot 0) (just BOTTOM LEFT) (visible true)))
+   (terminal
+    (body (symbol "PINSHORT") (pt 400 -300) (rot 90) (mir 0) (visible true))
+    (name (pt 0 -20) (rot 90) (just TOP RIGHT) (visible false))
+    (number (pt 0 20) (rot 90) (just TOP LEFT) (visible true)))
+   (terminal
+    (body (symbol "PINSHORT") (pt 400 300) (rot 90) (mir X) (visible true))
+    (name (pt 0 -20) (rot 90) (just TOP RIGHT) (visible false))
+    (number (pt 0 20) (rot 90) (just TOP LEFT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "SOT65P220X100-3N"
+   (units MM)
+   (layer OCCA
+    (graphic
+     (stroke 0.05)
+     (path
+      (closed true)
+      (pt -1.825 1.35)
+      (pt 1.825 1.35)
+      (pt 1.825 -1.35)
+      (pt -1.825 -1.35)
+      (pt -1.825 1.35))))
+   (layer TASM
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -0.625 1)
+      (pt 0.625 1)
+      (pt 0.625 -1)
+      (pt -0.625 -1)
+      (pt -0.625 1))))
+   (layer TASM
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed false)
+      (pt -0.625 0.35)
+      (pt 0.025 1))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed true)
+      (pt -0.075 1)
+      (pt 0.075 1)
+      (pt 0.075 -1)
+      (pt -0.075 -1)
+      (pt -0.075 1))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt -1.575 1.175)
+      (pt -0.425 1.175))))
+   (leg 1 (pt -1 0.65) (padstack 0))
+   (leg 2 (pt -1 -0.65) (padstack 0))
+   (leg 3 (pt 1 0) (padstack 0))
+   (padstack 0
+    (plated false)
+    (pad (layer TCOP) (rectf 0.55 1.15 0 0 0))
+   )
+   (model "NSVMSD1819A-RT1G.stp"
+    (euler 0 0 0)
+    (offset 0 0 0)
+   )
+  )
+ )
+)

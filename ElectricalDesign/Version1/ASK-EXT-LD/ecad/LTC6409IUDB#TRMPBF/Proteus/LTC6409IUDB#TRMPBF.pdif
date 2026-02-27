@@ -1,0 +1,214 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "LTC6409IUDB#TRMPBF"
+   (description "High Speed Operational Amplifiers 10GHz GBW 1.1nV/rtHz Differential Amp")
+   (family "ANA")
+   (package "LTC6409IUDBTRMPBF")
+   (attribute "Datasheet Link" "https://www.analog.com/media/en/technical-documentation/data-sheets/6409fb.pdf")
+   (attribute "Geometry.Height" "0.85mm")
+   (attribute "Mouser Part Number" "584-C6409IUDBTRMPBF")
+   (attribute "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Analog-Devices/LTC6409IUDBTRMPBF?qs=hVkxg5c3xu%252BCxcBUxz33zw%3D%3D")
+   (attribute "Manufacturer_Name" "Analog Devices")
+   (attribute "Manufacturer_Part_Number" "LTC6409IUDB#TRMPBF")
+   (gate
+    (symbol "LTC6409IUDB#TRMPBF")
+    (pin "-OUT" 1 PS)
+    (pin "+IN" 2 PS)
+    (pin "$SHDN$" 3 PS)
+    (pin "V+_1" 4 PS)
+    (pin "VOCM" 5 PS)
+    (pin "-IN" 6 PS)
+    (pin "+OUT" 7 PS)
+    (pin "V-_1" 8 PS)
+    (pin "V+_2" 9 PS)
+    (pin "V-_2" 10 PS)
+    (pin "EP_(V-)" 11 PS)
+   )
+  )
+  (symbol "LTC6409IUDB#TRMPBF"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 200 100) (pt 1100 100) (pt 1100 -600) (pt 200 -600) (pt 200 100) (closed))
+   )
+   (terminal
+    (body (symbol "PIN") (pt 0 0) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -100) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -200) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -300) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -400) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -500) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1300 0) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1300 -100) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1300 -200) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1300 -300) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1300 -400) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "LTC6409IUDBTRMPBF"
+   (units MM)
+   (layer TASM
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed true)
+      (pt -1.5 1)
+      (pt 1.5 1)
+      (pt 1.5 -1)
+      (pt -1.5 -1)
+      (pt -1.5 1))))
+   (layer OCCA
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -2.5 1.75)
+      (pt 2.25 1.75)
+      (pt 2.25 -1.75)
+      (pt -2.5 -1.75)
+      (pt -2.5 1.75))))
+   (layer TSLK
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed false)
+      (pt -0.8 1)
+      (pt -1.5 1)
+      (pt -1.5 0.7))))
+   (layer TSLK
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed false)
+      (pt -1.5 0.1)
+      (pt -1.5 -0.1))))
+   (layer TSLK
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed false)
+      (pt -1.5 -0.7)
+      (pt -1.5 -1)
+      (pt -0.8 -1))))
+   (layer TSLK
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed false)
+      (pt 0.8 -1)
+      (pt 1.5 -1)
+      (pt 1.5 -0.7))))
+   (layer TSLK
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed false)
+      (pt 1.5 0.1)
+      (pt 1.5 -0.1))))
+   (layer TSLK
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed false)
+      (pt 0.8 1)
+      (pt 1.5 1)
+      (pt 1.5 0.7))))
+   (layer TSLK
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -1.95 0.45)
+      (arc (pt -1.950 0.450) (pt -2.000 0.350) (pt -1.900 0.450) (start -180.0) (sweep 90.0))
+      (pt -1.95 0.35)
+      (arc (pt -1.950 0.350) (pt -2.000 0.350) (pt -1.900 0.450) (start -180.0) (sweep -90.0))
+      (pt -1.95 0.45))))
+   (leg 1 (pt -1.275 0.400) (padstack 1))
+   (leg 2 (pt -1.325 -0.400) (padstack 2))
+   (leg 3 (pt -0.500 -0.925) (padstack 0))
+   (leg 4 (pt 0.000 -0.925) (padstack 0))
+   (leg 5 (pt 0.500 -0.925) (padstack 0))
+   (leg 6 (pt 1.325 -0.400) (padstack 6))
+   (leg 7 (pt 1.325 0.400) (padstack 7))
+   (leg 8 (pt 0.500 0.925) (padstack 0))
+   (leg 9 (pt 0.000 0.925) (padstack 0))
+   (leg 10 (pt -0.500 0.925) (padstack 0))
+   (leg 11 (pt 0.000 0.075) (padstack 11))
+   (padstack 0
+    (plated false)
+    (pad (layer TCOP) (rectf 0.250 0.650 0 0 90.000))
+   )
+   (padstack 1
+    (plated false)
+    (pad (layer TCOP) (rectf 0.250 0.950 0 0 0.000))
+   )
+   (padstack 2
+    (plated false)
+    (pad (layer TCOP) (rectf 0.250 0.850 0 0 0.000))
+   )
+   (padstack 6
+    (plated false)
+    (pad (layer TCOP) (rectf 0.250 0.850 0 0 0.000))
+   )
+   (padstack 7
+    (plated false)
+    (pad (layer TCOP) (rectf 0.250 0.850 0 0 0.000))
+   )
+   (padstack 11
+    (plated false)
+    (pad (layer TCOP) (rectf 0.250 0.900 0 0 0.000))
+   )
+   (model "LTC6409IUDB#TRMPBF.stp"
+    (euler -90 0 0)
+    (offset -0.009999999776482582 0 -0.019999999552965164)
+   )
+  )
+ )
+)

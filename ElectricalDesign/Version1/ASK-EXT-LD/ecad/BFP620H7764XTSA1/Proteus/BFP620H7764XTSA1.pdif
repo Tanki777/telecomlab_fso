@@ -1,0 +1,120 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "BFP620H7764XTSA1"
+   (description "RF Bipolar Transistors RF BIP TRANSISTOR")
+   (family "TRX")
+   (package "BFP620H7764XTSA1")
+   (attribute "Datasheet Link" "https://www.infineon.com/dgdl/Infineon-BFP620-DS-v02_00-EN.pdf?fileId=5546d462689a790c01690f0396db3924")
+   (attribute "Geometry.Height" "1mm")
+   (attribute "Mouser Part Number" "726-BFP620H7764XTSA1")
+   (attribute "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Infineon-Technologies/BFP620H7764XTSA1?qs=K00xGehIljsJB9eGzWKrqA%3D%3D")
+   (attribute "Manufacturer_Name" "Infineon")
+   (attribute "Manufacturer_Part_Number" "BFP620H7764XTSA1")
+   (gate
+    (symbol "BFP620H7764XTSA1")
+    (pin "B" 1 PS)
+    (pin "E_1" 2 PS)
+    (pin "C" 3 PS)
+    (pin "E_2" 4 PS)
+   )
+  )
+  (symbol "BFP620H7764XTSA1"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 200 100) (pt 800 100) (pt 800 -200) (pt 200 -200) (pt 200 100) (closed))
+   )
+   (terminal
+    (body (symbol "PIN") (pt 0 0) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -100) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1000 -100) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1000 0) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "BFP620H7764XTSA1"
+   (units MM)
+   (layer TASM
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -1 0.625)
+      (pt 1 0.625)
+      (pt 1 -0.625)
+      (pt -1 -0.625)
+      (pt -1 0.625))))
+   (layer OCCA
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -2 2.3)
+      (pt 2 2.3)
+      (pt 2 -2.3)
+      (pt -2 -2.3)
+      (pt -2 2.3))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt -1 0.4)
+      (pt -1 -0.4))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt 1 0.4)
+      (pt 1 -0.4))))
+   (layer TSLK
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -0.65 -1.8)
+      (arc (pt -0.650 -1.800) (pt -0.700 -1.900) (pt -0.600 -1.800) (start 180.0) (sweep 90.0))
+      (pt -0.65 -1.9)
+      (arc (pt -0.650 -1.900) (pt -0.700 -1.900) (pt -0.600 -1.800) (start 180.0) (sweep -90.0))
+      (pt -0.65 -1.8))))
+   (leg 1 (pt -0.650 -1.010) (padstack 0))
+   (leg 2 (pt 0.500 -1.010) (padstack 2))
+   (leg 3 (pt 0.650 1.010) (padstack 0))
+   (leg 4 (pt -0.650 1.010) (padstack 0))
+   (padstack 0
+    (plated false)
+    (pad (layer TCOP) (rectf 0.500 0.580 0 0 90.000))
+   )
+   (padstack 2
+    (plated false)
+    (pad (layer TCOP) (rectf 0.580 0.800 0 0 0.000))
+   )
+  )
+ )
+)

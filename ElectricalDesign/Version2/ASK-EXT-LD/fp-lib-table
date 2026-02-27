@@ -1,0 +1,7 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "TO-46-3")(type "KiCad")(uri "${KIPRJMOD}/ecad/OPV302/TO-46-3.pretty")(options "")(descr ""))
+  (lib (name "CONSMA")(type "KiCad")(uri "${KIPRJMOD}/ecad/CONSMA001-G/KiCad")(options "")(descr ""))
+  (lib (name "OPV302")(type "KiCad")(uri "${KIPRJMOD}/ecad/OPV302/_OPV302/OPV302.pretty")(options "")(descr ""))
+  (lib (name "FSCOM")(type "KiCad")(uri "${KIPRJMOD}/FSCOM.pretty")(options "")(descr ""))
+)

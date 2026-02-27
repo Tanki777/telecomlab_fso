@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "BFS17NTA"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2023-11-01-07:27:46)
+    (mountForm default
+        (footprintRef "BFS17NTA")
+        (spec "System")
+    )
+)

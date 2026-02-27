@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'MAX40027ATC_VY_T'
+CLASS = IC
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Analog Devices", "MAX40027ATC/VY+T" (!) = "", "SON50P200X300X80-13N", "Small Outline No-lead", "700-MAX40027ATC/VY+T", "https://www.mouser.co.uk/ProductDetail/Analog-Devices-Maxim-Integrated/MAX40027ATC-VY%2bT?qs=vmHwEFxEFR8%252B9HSNBRNlvA%3D%3D", "Dual 280ps High-Speed Comparator, Ultra-Low Dispersion with LVDS Outputs", "https://pdfserv.maximintegrated.com/en/ds/MAX40027.pdf", "0.8 mm"
+END_PART
+
+END.

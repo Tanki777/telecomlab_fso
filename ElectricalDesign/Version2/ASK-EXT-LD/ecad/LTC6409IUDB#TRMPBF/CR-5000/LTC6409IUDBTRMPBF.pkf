@@ -1,0 +1,10 @@
+(unit MM)
+
+(package "LTC6409IUDBTRMPBF"
+    (type UNDEF)
+    (uver 2)
+    (mountForm default
+        (footprintRef "LTC6409IUDBTRMPBF")
+        (spec "default")
+    )
+)

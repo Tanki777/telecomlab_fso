@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'AD5693RARMZ'
+CLASS = IC
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Analog Devices", "AD5693RARMZ" (!) = "", "SOP50P490X110-10N", "Small Outline Packages", "584-AD5693RARMZ", "https://www.mouser.co.uk/ProductDetail/Analog-Devices/AD5693RARMZ?qs=vPP9GyyTAo0MlAXojaRB6w%3D%3D", "Analog Devices AD5693RARMZ, 16 bit Serial DAC, 10-Pin MSOP", "https://www.analog.com/media/en/technical-documentation/data-sheets/ad5693r_5692r_5691r_5693.pdf", "1.1 mm"
+END_PART
+
+END.

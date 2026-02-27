@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'MTPD1346D_010'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Marktech Optoelectronics", "MTPD1346D-010" (!) = "", "MTPD1346D010", "Other", "193-MTPD1346D-010", "https://www.mouser.co.uk/ProductDetail/Marktech-Optoelectronics/MTPD1346D-010?qs=DPoM0jnrROUuOq3jfCYjTw%3D%3D", "SENSOR PHOTODIODE 1300NM TO46-3", "http://www.marktechopto.com/pdf/products/datasheet/MTPD1346D-010.pdf", "3 mm"
+END_PART
+
+END.

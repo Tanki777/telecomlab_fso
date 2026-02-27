@@ -1,0 +1,9 @@
+Manufacturer=TT Electronics
+PartNumber=OPV302
+PartCategory=Diode
+PackageCategory=Other
+PinCount=3
+Version=2.2
+Released=2018-03-02 13:18:27
+Downloaded=2025-11-14 17:57:12
+3D=Y

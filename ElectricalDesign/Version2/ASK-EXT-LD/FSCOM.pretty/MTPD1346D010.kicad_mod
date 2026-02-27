@@ -1,0 +1,379 @@
+(footprint "MTPD1346D010"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "MTPD1346D-010-1")
+	(property "Reference" "REF**"
+		(at 4.85 -0.025 90)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "a7e89f87-fc72-4c4d-8708-1c347b26f26e")
+		(effects
+			(font
+				(size 0.75 0.75)
+				(thickness 0.125)
+			)
+		)
+	)
+	(property "Value" "MTPD1346D-010"
+		(at 1.27 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "e41047cc-5eb1-46f3-9ae6-326fc9a0da71")
+		(effects
+			(font
+				(size 1.1684 1.1684)
+				(thickness 0.1016)
+			)
+		)
+	)
+	(property "Datasheet" "http://www.marktechopto.com/pdf/products/datasheet/MTPD1346D-010.pdf"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d61fb130-2d12-4792-97f7-7d1d7f0dba0c")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "SENSOR PHOTODIODE 1300NM TO46-3"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "99ead9ce-4892-4ebc-8d2c-9c5b64c2db5a")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Height" "3"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6e886c78-61a7-4a87-b294-9842bb5dd0fc")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Mouser Part Number" "193-MTPD1346D-010"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f0644e25-f424-4e22-9609-8680fb2baa69")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Marktech-Optoelectronics/MTPD1346D-010?qs=DPoM0jnrROUuOq3jfCYjTw%3D%3D"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "fde595e0-cad3-4ebc-ae72-71e28b980f67")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Manufacturer_Name" "Marktech Optoelectronics"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7ee18a1d-3a88-44d9-b774-f1594de15321")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Manufacturer_Part_Number" "MTPD1346D-010"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "85c38770-22e0-4720-91b2-60c5beab93de")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Sim.Pins" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "84431da5-679e-4338-83c8-7eb69950e90c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_line
+		(start -1.43 0)
+		(end -1.43 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "eb92dae9-0c97-4aac-8a3e-16916cec986a")
+	)
+	(fp_line
+		(start 3.07 2)
+		(end 3.27 2.2)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "17dfd05e-af6d-4a39-9037-fee9059a7bab")
+	)
+	(fp_line
+		(start 3.27 2.2)
+		(end 3.57 1.9)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "82cab730-7ac2-4e28-8539-a0fc691f0ad9")
+	)
+	(fp_line
+		(start 3.57 1.9)
+		(end 3.37 1.7)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "29713dbc-0e58-4770-866c-fa53428a2304")
+	)
+	(fp_line
+		(start 3.97 0)
+		(end 3.97 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "9982d065-61a4-45c1-9664-c2b492a7ba2d")
+	)
+	(fp_arc
+		(start -1.43 0)
+		(mid 1.27 -2.7)
+		(end 3.97 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "55bf1e7f-d674-4b63-bd2f-89fca908b9e6")
+	)
+	(fp_arc
+		(start 3.97 0)
+		(mid 1.27 2.7)
+		(end -1.43 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d4c387ed-6163-4d94-98de-9cbb8e00fb2c")
+	)
+	(fp_arc
+		(start -1.43 0)
+		(mid 1.27 -2.7)
+		(end 3.97 0)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "a9333b7f-ea4e-4bbd-b497-25846e5d37af")
+	)
+	(fp_arc
+		(start 3.97 0)
+		(mid 1.27 2.7)
+		(end -1.43 0)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "e7e06609-a24a-4063-91ad-133b2458821d")
+	)
+	(fp_line
+		(start -2.43 -3.7)
+		(end -2.43 3.7)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "efed4db1-5024-4128-b456-75be2e625958")
+	)
+	(fp_line
+		(start -2.43 3.7)
+		(end 4.97 3.7)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "3be43fcd-53e2-44ff-a579-99af29981291")
+	)
+	(fp_line
+		(start -1.43 0)
+		(end -1.43 0)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "e7a5c66c-fee4-4628-a796-10f8610e8fff")
+	)
+	(fp_line
+		(start 3.07 2)
+		(end 3.27 2.2)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "e478d508-dd13-4b4e-bd4d-d2d78f1dc52b")
+	)
+	(fp_line
+		(start 3.27 2.2)
+		(end 3.57 1.9)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "b9f841cd-43bf-40f0-96a8-b7263d96b84a")
+	)
+	(fp_line
+		(start 3.57 1.9)
+		(end 3.37 1.7)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "349d8219-ae66-4a9a-b82f-5a75068d79a7")
+	)
+	(fp_line
+		(start 3.97 0)
+		(end 3.97 0)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "effda33c-1068-4b12-a8ba-e470659fad56")
+	)
+	(fp_line
+		(start 4.97 -3.7)
+		(end -2.43 -3.7)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "282fe3e8-287d-43c9-ba6c-8063fde080cf")
+	)
+	(fp_line
+		(start 4.97 3.7)
+		(end 4.97 -3.7)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "b6a542d3-051c-49ca-bb93-7e88091e8be3")
+	)
+	(pad "1" thru_hole rect
+		(at 0 0)
+		(size 1.192 1.192)
+		(drill 0.65)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.1016)
+		(thermal_bridge_angle 0)
+		(uuid "86e4a68d-e59d-44ec-8ea3-69ee8c09b2f3")
+	)
+	(pad "2" thru_hole circle
+		(at 1.27 -1.27)
+		(size 1.192 1.192)
+		(drill 0.65)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(thermal_bridge_angle 0)
+		(teardrops
+			(best_length_ratio 0.5)
+			(max_length 1)
+			(best_width_ratio 0.6)
+			(max_width 2)
+			(curved_edges no)
+			(filter_ratio 0.9)
+			(enabled yes)
+			(allow_two_segments yes)
+			(prefer_zone_connections yes)
+		)
+		(uuid "ccd466dd-c660-4fc5-8eea-adfcf215da91")
+	)
+	(pad "3" thru_hole circle
+		(at 2.54 0)
+		(size 1.192 1.192)
+		(drill 0.65)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(thermal_bridge_angle 0)
+		(teardrops
+			(best_length_ratio 0.5)
+			(max_length 1)
+			(best_width_ratio 0.6)
+			(max_width 2)
+			(curved_edges no)
+			(filter_ratio 0.9)
+			(enabled yes)
+			(allow_two_segments yes)
+			(prefer_zone_connections yes)
+		)
+		(uuid "d94f9016-cda2-4b79-bdd2-779f1f0ea7c4")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/ecad/OPV302/3D/OPV302.stp"
+		(offset
+			(xyz 1.25 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -180)
+		)
+	)
+)

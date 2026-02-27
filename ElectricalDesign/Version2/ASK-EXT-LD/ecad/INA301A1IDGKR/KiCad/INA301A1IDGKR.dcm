@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP INA301A1IDGKR
+D 36V, Low-/High-side, Voltage Output CSA with Comparator
+K
+F http://www.ti.com/lit/gpn/INA301
+$ENDCMP
+#
+#End Doc Library

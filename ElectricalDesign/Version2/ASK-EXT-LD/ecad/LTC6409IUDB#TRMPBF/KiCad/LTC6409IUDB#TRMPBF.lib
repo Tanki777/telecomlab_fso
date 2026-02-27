@@ -1,0 +1,32 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model LTC6409IUDB#TRMPBF
+#/1187642/1632075/2.50/11/4/Integrated Circuit
+DEF LTC6409IUDB#TRMPBF IC 0 30 Y Y 1 F N
+F0 "IC" 1150 300 50 H V L CNN
+F1 "LTC6409IUDB#TRMPBF" 1150 200 50 H V L CNN
+F2 "LTC6409IUDBTRMPBF" 1150 100 50 H I L CNN
+F3 "https://www.analog.com/media/en/technical-documentation/data-sheets/6409fb.pdf" 1150 0 50 H I L CNN
+F4 "High Speed Operational Amplifiers 10GHz GBW 1.1nV/rtHz Differential Amp" 1150 -100 50 H I L CNN "Description"
+F5 "0.85" 1150 -200 50 H I L CNN "Height"
+F6 "584-C6409IUDBTRMPBF" 1150 -300 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/Analog-Devices/LTC6409IUDBTRMPBF?qs=hVkxg5c3xu%252BCxcBUxz33zw%3D%3D" 1150 -400 50 H I L CNN "Mouser Price/Stock"
+F8 "Analog Devices" 1150 -500 50 H I L CNN "Manufacturer_Name"
+F9 "LTC6409IUDB#TRMPBF" 1150 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X -OUT 1 0 0 200 R 50 50 0 0 P
+X +IN 2 0 -100 200 R 50 50 0 0 P
+X ~SHDN 3 0 -200 200 R 50 50 0 0 P
+X V+_1 4 0 -300 200 R 50 50 0 0 P
+X VOCM 5 0 -400 200 R 50 50 0 0 P
+X -IN 6 0 -500 200 R 50 50 0 0 P
+X +OUT 7 1300 0 200 L 50 50 0 0 P
+X V-_1 8 1300 -100 200 L 50 50 0 0 P
+X V+_2 9 1300 -200 200 L 50 50 0 0 P
+X V-_2 10 1300 -300 200 L 50 50 0 0 P
+X EP_(V-) 11 1300 -400 200 L 50 50 0 0 P
+P 5 0 1 6 200 100 1100 100 1100 -600 200 -600 200 100 N
+ENDDRAW
+ENDDEF
+#
+#End Library

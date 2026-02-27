@@ -1,0 +1,16 @@
+.AD5693RARMZ :1 ;Analog Devices AD5693RARMZ, 16 bit Serial DAC, 10-Pin MSOP
+SOP50P490X110-10N
+*STM IC
+*NGS
+*PLB 1="VDD" 2="VLOGIC" 3="'RESET'" 4="'LDAC'" 5="GND" 6="A0" 7="SCL" 8="SDA" 9="VREF" 10="VOUT"
+*MXP 10
+*DFN AD5693RARMZ
+~!Mouser Part Number (584-AD5693RARMZ)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Analog-Devices/AD5693RARMZ?qs=vPP9GyyTAo0MlAXojaRB6w%3D%3D)
+~!Manufacturer_Name (Analog Devices)
+~!Manufacturer_Part_Number (AD5693RARMZ)
+~!Link Datasheet (https://www.analog.com/media/en/technical-documentation/data-sheets/ad5693r_5692r_5691r_5693.pdf)
+~!Height (1.1mm)
+~!3D_Model (AD5693RARMZ)
+AD5693RARMZ
+1.1!U 2.1!U 3.1!U 4.1!U 5.1!U 10.1!U 9.1!U 8.1!U 7.1!U 6.1!U 

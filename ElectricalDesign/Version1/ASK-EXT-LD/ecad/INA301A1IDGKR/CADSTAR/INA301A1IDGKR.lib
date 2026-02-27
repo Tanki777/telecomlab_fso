@@ -1,0 +1,16 @@
+.INA301A1IDGKR :1 ;36V, Low-/High-side, Voltage Output CSA with Comparator
+SOP65P490X110-8N
+*STM IC
+*NGS
+*PLB 1="VS" 2="OUT" 3="LIMIT" 4="GND" 5="RESET" 6="'ALERT'" 7="IN-" 8="IN+"
+*MXP 8
+*DFN INA301A1IDGKR
+~!Mouser Part Number (595-INA301A1IDGKR)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Texas-Instruments/INA301A1IDGKR?qs=yajEpaT76uR6go0HjUkNgA%3D%3D)
+~!Manufacturer_Name (Texas Instruments)
+~!Manufacturer_Part_Number (INA301A1IDGKR)
+~!Link Datasheet (http://www.ti.com/lit/gpn/INA301)
+~!Height (1.1mm)
+~!3D_Model (INA301A1IDGKR)
+INA301A1IDGKR
+1.1!U 2.1!U 3.1!U 4.1!U 8.1!U 7.1!U 6.1!U 5.1!U 

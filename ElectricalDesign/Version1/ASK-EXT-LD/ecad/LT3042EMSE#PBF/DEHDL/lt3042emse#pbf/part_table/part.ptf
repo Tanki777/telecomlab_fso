@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'LT3042EMSE#PBF'
+CLASS = IC
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Analog Devices", "LT3042EMSE#PBF" (!) = "", "SOP50P490X110-11N", "Small Outline Packages", "584-LT3042EMSE#PBF", "https://www.mouser.co.uk/ProductDetail/Analog-Devices/LT3042EMSEPBF?qs=oahfZPh6IAJ3XP16d20ITw%3D%3D", "LINEAR TECHNOLOGY - LT3042EMSE#PBF - LDO, ADJ, 0.2A, 0V-15V, MSOP-10", "http://www.linear.com/docs/46159", "1.1 mm"
+END_PART
+
+END.

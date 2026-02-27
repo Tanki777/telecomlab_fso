@@ -1,0 +1,17 @@
+LTspice 24.1.1 for Windows
+Circuit: C:\Users\andre\OneDrive\Documents\_Uni 2\__Courses\_WS25-26\Telcom lab\ASK-EXT-LD\spice\Draft2.net
+Start Time: Mon Dec 15 14:31:32 2025
+Options: gmin=1E-12 TNOM = 25  TNOM=25 GMIN= 1.00e-12
+solver = Normal
+Maximum thread count: 16
+tnom = 25
+temp = 27
+method = trap
+Direct Newton iteration for .op point succeeded.
+Total elapsed time: 0.139 seconds.
+
+Files loaded:
+C:\Users\andre\OneDrive\Documents\_Uni 2\__Courses\_WS25-26\Telcom lab\ASK-EXT-LD\spice\Draft2.net
+C:\Users\andre\AppData\Local\LTspice\lib\cmp\standard.dio
+C:\Users\andre\Downloads\infineon-rftransistor-spice.lib-simulationmodels-en.lib
+

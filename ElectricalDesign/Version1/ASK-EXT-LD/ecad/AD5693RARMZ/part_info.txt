@@ -1,0 +1,9 @@
+Manufacturer=Analog Devices
+PartNumber=AD5693RARMZ
+PartCategory=Integrated Circuit
+PackageCategory=Small Outline Packages
+PinCount=10
+Version=1.1
+Released=2019-01-22 04:46:34
+Downloaded=2025-11-02 17:23:47
+3D=Y

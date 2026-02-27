@@ -1,0 +1,70 @@
+(Japanese_coding: sjis)
+(function "ECS_559937"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2018-03-02-13:18:27)
+    (utime 2024-10-10-15:54:00)
+    (interface
+        (port "1" (symbPinId 1) (portType INOUT))
+        (port "2" (symbPinId 2) (portType INOUT))
+        (port "3" (symbPinId 3) (portType INOUT))
+    )
+    (property "symbolName" "OPV302")
+)
+
+
+(pinAssign "ECS_559937"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2018-03-02-13:18:27)
+    (utime 2024-10-10-15:54:00)
+    (interface
+        (port "1" (symbPinId 1) (portName "VCSEL_ANODE") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "VCSEL_CATHODE") (portType INOUT))
+        (port "3" (symbPinId 3) (portName "NO_CONNECTION") (portType INOUT))
+    )
+    (internal
+        (funcInst (functionRef "ECS_559937")
+                (port "1" (match "1"))
+                (port "2" (match "2"))
+                (port "3" (match "3"))
+        )
+    )
+    (property "usePowerBox" "No")
+    (property "symbolName" "OPV302")
+)
+
+
+(part "OPV302"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2018-03-02-13:18:27)
+    (utime 2024-10-10-15:54:00)
+    (packageRef "OPV302")
+    (pinAssignRef "ECS_559937")
+    (interface
+        (port "1" (symbPinId 1) (portName "VCSEL_ANODE") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "VCSEL_CATHODE") (portType INOUT))
+        (port "3" (symbPinId 3) (portName "NO_CONNECTION") (portType INOUT))
+    )
+    (partClass UNDEF)
+    (useInSchema Y)
+    (useInLayout Y)
+    (inPartsList Y)
+    (partType NORMAL)
+    (placeRestriction FREE)
+    (property "enetNonSeries" "NO")
+    (property "refDesPrefix" "D")
+    (property "description" "OPTEK TECHNOLOGY - OPV302 - LASER DIODE")
+    (property "Mouser_Part_Number" "828-OPV302")
+    (property "Mouser_Price/Stock" "https://www.mouser.co.uk/ProductDetail/Optek-TT-Electronics/OPV302?qs=NVJATC80C48ntzd%252Borxscg%3D%3D")
+    (property "Manufacturer_Name" "TT Electronics")
+    (property "Manufacturer_Part_Number" "OPV302")
+    (property "Datasheet_Link" "https://componentsearchengine.com/Datasheets/1/OPV302.pdf")
+    (property "compAreaTopHeight" 6.604)
+)
+
+

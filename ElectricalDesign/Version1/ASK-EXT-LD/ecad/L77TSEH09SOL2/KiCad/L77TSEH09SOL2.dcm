@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP L77TSEH09SOL2
+D Dsub, Stamped Signal 3A, Straight PCB Thru Hole Low Profile, Height=6.02mm (.237in), 9 Socket, Bright Tin Shell, Flash Gold, 4-40 Threaded Rear Insert
+K
+F https://cdn.amphenol-cs.com/media/wysiwyg/files/drawing/l77tsxhxxsol2.pdf
+$ENDCMP
+#
+#End Doc Library

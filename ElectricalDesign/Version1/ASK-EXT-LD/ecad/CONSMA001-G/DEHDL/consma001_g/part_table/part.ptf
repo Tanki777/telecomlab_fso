@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'CONSMA001_G'
+CLASS = IO
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "TE Connectivity", "CONSMA001-G" (!) = "", "CONSMA001G", "Other", "712-CONSMA001-G", "https://www.mouser.co.uk/ProductDetail/TE-Connectivity-Linx-Technologies/CONSMA001-G?qs=W0r2Z67sYII1%2F%252BEN0FzKeQ%3D%3D", "SMA Connector, Jack, 50 ohm, Threaded, 12.4 GHz, 1 Position, Printed Circuit Board, Board Mount, -65  165 C [-85  329 F], Solder, Straight, Brass", "https://www.te.com/en/product-CONSMA001-G.html", "9.79 mm"
+END_PART
+
+END.

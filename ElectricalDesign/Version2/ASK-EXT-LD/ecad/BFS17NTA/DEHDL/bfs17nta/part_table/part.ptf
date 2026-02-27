@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'BFS17NTA'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Diodes Incorporated", "BFS17NTA" (!) = "", "BFS17NTA", "Other", "522-BFS17NTA", "https://www.mouser.co.uk/ProductDetail/Diodes-Incorporated/BFS17NTA?qs=IL8dDCGN3dBzBLb4sVVPgQ%3D%3D", "Diodes Inc BFS17NTA NPN RF Bipolar Transistor, 50 mA, 11 V, 3-Pin SOT-23", "https://www.diodes.com/assets/Datasheets/ds32160.pdf", "1.2 mm"
+END_PART
+
+END.

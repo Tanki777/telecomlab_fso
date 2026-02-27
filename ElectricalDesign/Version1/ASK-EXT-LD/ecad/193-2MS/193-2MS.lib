@@ -1,0 +1,25 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model 193-2MS
+#/891141/1632075/2.50/4/3/Switch
+DEF 193-2MS S 0 30 Y Y 1 F N
+F0 "S" 1050 300 50 H V L CNN
+F1 "193-2MS" 1050 200 50 H V L CNN
+F2 "1932MS" 1050 100 50 H I L CNN
+F3 "https://www.digikey.com/en/products/detail/cts-electrocomponents/193-2MS/267291" 1050 0 50 H I L CNN
+F4 "DIP Switches / SIP Switches DIP switches/SIP switches, SPST, PIANO, 2 POS, SMD, TUBE, OFF" 1050 -100 50 H I L CNN "Description"
+F5 "9.37" 1050 -200 50 H I L CNN "Height"
+F6 "774-1932MS" 1050 -300 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/CTS-Electronic-Components/193-2MS?qs=qNzHFtQhdJ82q85%2FJ3clGg%3D%3D" 1050 -400 50 H I L CNN "Mouser Price/Stock"
+F8 "CTS" 1050 -500 50 H I L CNN "Manufacturer_Name"
+F9 "193-2MS" 1050 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X COM_1 1 0 -100 200 R 50 50 0 0 P
+X COM_2 2 1200 -100 200 L 50 50 0 0 P
+X NO_1 3 1200 0 200 L 50 50 0 0 P
+X NO_2 4 0 0 200 R 50 50 0 0 P
+P 5 0 1 6 200 100 1000 100 1000 -200 200 -200 200 100 N
+ENDDRAW
+ENDDEF
+#
+#End Library

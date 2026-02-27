@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'LTC6409IUDB#TRMPBF'
+CLASS = IC
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Analog Devices", "LTC6409IUDB#TRMPBF" (!) = "", "LTC6409IUDBTRMPBF", "Other", "584-C6409IUDBTRMPBF", "https://www.mouser.co.uk/ProductDetail/Analog-Devices/LTC6409IUDBTRMPBF?qs=hVkxg5c3xu%252BCxcBUxz33zw%3D%3D", "High Speed Operational Amplifiers 10GHz GBW 1.1nV/rtHz Differential Amp", "https://www.analog.com/media/en/technical-documentation/data-sheets/6409fb.pdf", "0.85 mm"
+END_PART
+
+END.

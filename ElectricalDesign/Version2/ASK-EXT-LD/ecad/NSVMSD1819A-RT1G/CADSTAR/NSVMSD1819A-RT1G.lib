@@ -1,0 +1,16 @@
+.NSVMSD1819A-RT1G :1 ;Available in 8 mm, 7-inch/3000 Unit Tape and Reel; Low VCE(sat), < 0.5 V; High hFE, 210-460; Moisture Sensitivity Level 1; ESD Protection: Human Body Model > 4000 V ESD Protection: Machine Model > 400 V; Pb-Free Package is Available; S and NSV Prefix for Automotive and Other Applications Requiring Unique Site and Control Change Requirements; AEC-Q101 Qualified and PPAP Capable
+SOT65P220X100-3N
+*STM Q
+*NGS
+*PLB 1="B" 2="E" 3="C"
+*MXP 3
+*DFN NSVMSD1819A-RT1G
+~!Mouser Part Number (-)
+~!Mouser Price/Stock (-)
+~!Manufacturer_Name (onsemi)
+~!Manufacturer_Part_Number (NSVMSD1819A-RT1G)
+~!Link Datasheet (https://www.onsemi.com/download/data-sheet/pdf/msd1819a-rt1-d.pdf)
+~!Height (1mm)
+~!3D_Model (NSVMSD1819A-RT1G)
+NSVMSD1819A-RT1G
+1.1!U 2.1!U 3.1!U 

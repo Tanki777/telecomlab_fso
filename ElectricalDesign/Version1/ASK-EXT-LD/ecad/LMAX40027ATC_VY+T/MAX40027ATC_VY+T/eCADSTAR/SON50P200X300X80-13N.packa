@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "MAX40027ATC_VY+T"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2020-10-24-05:39:47)
+    (mountForm default
+        (footprintRef "SON50P200X300X80-13N")
+        (spec "System")
+    )
+)

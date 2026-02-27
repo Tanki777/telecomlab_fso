@@ -1,0 +1,31 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model NSVMSD1819A-RT1G
+#/19229836/1632075/2.50/3/2/Transistor BJT NPN
+DEF NSVMSD1819A-RT1G Q 0 30 Y Y 1 F N
+F0 "Q" 550 50 50 H V L CNN
+F1 "NSVMSD1819A-RT1G" 550 -50 50 H V L CNN
+F2 "SOT65P220X100-3N" 550 -150 50 H I L CNN
+F3 "https://www.onsemi.com/download/data-sheet/pdf/msd1819a-rt1-d.pdf" 550 -250 50 H I L CNN
+F4 "Available in 8 mm, 7-inch/3000 Unit Tape and Reel; Low VCE(sat), < 0.5 V; High hFE, 210-460; Moisture Sensitivity Level 1; ESD Protection: Human Body Model > 4000 V ESD Protection: Machine Model > 400 V; Pb-Free Package is Available; S and NSV Prefix for Automotive and Other Applications Requiring Unique Site and Control Change Requirements; AEC-Q101 Qualified and PPAP Capable" 550 -350 50 H I L CNN "Description"
+F5 "1" 550 -450 50 H I L CNN "Height"
+F6 "" 550 -550 50 H I L CNN "Mouser Part Number"
+F7 "" 550 -650 50 H I L CNN "Mouser Price/Stock"
+F8 "onsemi" 550 -750 50 H I L CNN "Manufacturer_Name"
+F9 "NSVMSD1819A-RT1G" 550 -850 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X ~ 1 0 0 100 R 50 50 0 0 P
+X ~ 2 400 -300 100 U 50 50 0 0 P
+X ~ 3 400 300 100 D 50 50 0 0 P
+P 2 0 1 20 300 100 300 -100 N
+P 2 0 1 6 300 50 400 150 N
+P 2 0 1 6 300 -50 400 -150 N
+P 2 0 1 6 400 -150 400 -200 N
+P 2 0 1 6 400 150 400 200 N
+P 2 0 1 6 100 0 300 0 N
+C 350 0 158 0 1 10 N
+P 4 0 1 10 330 -100 350 -80 370 -120 330 -100 F
+ENDDRAW
+ENDDEF
+#
+#End Library

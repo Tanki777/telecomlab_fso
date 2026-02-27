@@ -1,0 +1,15 @@
+.MTPD1346D-010 :1 ;SENSOR PHOTODIODE 1300NM TO46-3
+MTPD1346D010
+*STM D
+*NGS
+*PLB 1="CASE" 2="K" 3="A"
+*MXP 3
+*DFN MTPD1346D-010
+~!Mouser Part Number (193-MTPD1346D-010)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Marktech-Optoelectronics/MTPD1346D-010?qs=DPoM0jnrROUuOq3jfCYjTw%3D%3D)
+~!Manufacturer_Name (Marktech Optoelectronics)
+~!Manufacturer_Part_Number (MTPD1346D-010)
+~!Link Datasheet (http://www.marktechopto.com/pdf/products/datasheet/MTPD1346D-010.pdf)
+~!Height (3mm)
+MTPD1346D-010
+1.1!U 2.1!U 3.1!U 

@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "MTPD1346D-010"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2019-05-01-16:41:16)
+    (mountForm default
+        (footprintRef "MTPD1346D010")
+        (spec "System")
+    )
+)

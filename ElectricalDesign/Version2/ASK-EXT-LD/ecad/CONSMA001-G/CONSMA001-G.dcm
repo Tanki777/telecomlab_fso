@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP CONSMA001-G
+D SMA Connector, Jack, 50 ohm, Threaded, 12.4 GHz, 1 Position, Printed Circuit Board, Board Mount, -65  165 C [-85  329 F], Solder, Straight, Brass
+K
+F https://www.te.com/en/product-CONSMA001-G.html
+$ENDCMP
+#
+#End Doc Library

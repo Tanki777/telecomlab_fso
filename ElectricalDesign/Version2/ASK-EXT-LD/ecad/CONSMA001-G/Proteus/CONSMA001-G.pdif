@@ -1,0 +1,150 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "CONSMA001-G"
+   (description "SMA Connector, Jack, 50 ohm, Threaded, 12.4 GHz, 1 Position, Printed Circuit Board, Board Mount, -65  165 C [-85  329 F], Solder, Straight, Brass")
+   (family "CON")
+   (package "CONSMA001G")
+   (attribute "Datasheet Link" "https://www.te.com/en/product-CONSMA001-G.html")
+   (attribute "Geometry.Height" "9.79mm")
+   (attribute "Mouser Part Number" "712-CONSMA001-G")
+   (attribute "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TE-Connectivity-Linx-Technologies/CONSMA001-G?qs=W0r2Z67sYII1%2F%252BEN0FzKeQ%3D%3D")
+   (attribute "Manufacturer_Name" "TE Connectivity")
+   (attribute "Manufacturer_Part_Number" "CONSMA001-G")
+   (gate
+    (symbol "CONSMA001-G")
+    (pin "1" 1 PS)
+    (pin "2" 2 PS)
+    (pin "3" 3 PS)
+    (pin "4" 4 PS)
+    (pin "5" 5 PS)
+   )
+  )
+  (symbol "CONSMA001-G"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 200 100) (pt 600 100) (pt 600 -300) (pt 200 -300) (pt 200 100) (closed))
+   )
+   (terminal
+    (body (symbol "PIN") (pt 0 0) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -100) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -200) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 800 0) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 800 -100) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "CONSMA001G"
+   (units MM)
+   (layer TASM
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -3.5 -3.5)
+      (pt 3.5 -3.5)
+      (pt 3.5 3.5)
+      (pt -3.5 3.5)
+      (pt -3.5 -3.5))))
+   (layer OCCA
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -4.675 4.675)
+      (pt 4.675 4.675)
+      (pt 4.675 -4.675)
+      (pt -4.675 -4.675)
+      (pt -4.675 4.675))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt -1.6 3.5)
+      (pt 1.6 3.5))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt -1.6 -3.5)
+      (pt 1.6 -3.5))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt -3.5 1.6)
+      (pt -3.5 -1.6))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt 3.5 1.6)
+      (pt 3.5 -1.6))))
+   (layer TSLK
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -4.1 0)
+      (arc (pt -4.100 0.000) (pt -4.200 -0.050) (pt -4.100 0.050) (start 180.0) (sweep .0))
+      (pt -4.2 0)
+      (arc (pt -4.200 0.000) (pt -4.200 -0.050) (pt -4.100 0.050) (start 180.0) (sweep 180.0))
+      (pt -4.1 0))))
+   (leg 1 (pt 0.000 0.000) (padstack 1))
+   (leg 2 (pt -2.550 -2.550) (padstack 0))
+   (leg 3 (pt 2.550 -2.550) (padstack 0))
+   (leg 4 (pt 2.550 2.550) (padstack 0))
+   (leg 5 (pt -2.550 2.550) (padstack 0))
+   (padstack 0
+    (hole 1.5)
+    (plated true)
+    (pad (layer TCOP) (round 2.250))
+    (pad (layer INNER) (round 2.250))
+    (pad (layer BCOP) (round 2.250))
+   )
+   (padstack 1
+    (hole 1.4)
+    (plated true)
+    (pad (layer TCOP) (square 2.100))
+    (pad (layer INNER) (round 2.100))
+    (pad (layer BCOP) (square 2.100))
+   )
+   (model "CONSMA001-G.stp"
+    (euler 0 0 0)
+    (offset 0 0 9.800000190734863)
+   )
+  )
+ )
+)

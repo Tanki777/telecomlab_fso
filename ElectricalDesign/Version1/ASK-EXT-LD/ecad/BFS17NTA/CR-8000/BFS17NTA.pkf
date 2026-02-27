@@ -1,0 +1,10 @@
+(unit MM)
+
+(package "BFS17NTA"
+    (type UNDEF)
+    (uver 2)
+    (mountForm default
+        (footprintRef "BFS17NTA")
+        (spec "default")
+    )
+)

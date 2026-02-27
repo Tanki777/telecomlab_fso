@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP BFP620H7764XTSA1
+D RF Bipolar Transistors RF BIP TRANSISTOR
+K
+F https://www.infineon.com/dgdl/Infineon-BFP620-DS-v02_00-EN.pdf?fileId=5546d462689a790c01690f0396db3924
+$ENDCMP
+#
+#End Doc Library

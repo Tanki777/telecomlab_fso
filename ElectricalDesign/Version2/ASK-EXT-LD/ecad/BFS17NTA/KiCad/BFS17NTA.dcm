@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP BFS17NTA
+D Diodes Inc BFS17NTA NPN RF Bipolar Transistor, 50 mA, 11 V, 3-Pin SOT-23
+K
+F https://www.diodes.com/assets/Datasheets/ds32160.pdf
+$ENDCMP
+#
+#End Doc Library

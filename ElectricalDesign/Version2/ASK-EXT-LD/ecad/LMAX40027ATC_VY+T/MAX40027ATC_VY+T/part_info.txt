@@ -1,0 +1,9 @@
+Manufacturer=Analog Devices
+PartNumber=MAX40027ATC/VY+T
+PartCategory=Integrated Circuit
+PackageCategory=Small Outline No-lead
+PinCount=13
+Version=2.1
+Released=2020-10-24 05:39:47
+Downloaded=2025-11-01 10:40:55
+3D=Y

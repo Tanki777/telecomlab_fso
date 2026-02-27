@@ -1,0 +1,15 @@
+.BFP620H7764XTSA1 :1 ;RF Bipolar Transistors RF BIP TRANSISTOR
+BFP620H7764XTSA1
+*STM Q
+*NGS
+*PLB 1="B" 2="E_1" 3="C" 4="E_2"
+*MXP 4
+*DFN BFP620H7764XTSA1
+~!Mouser Part Number (726-BFP620H7764XTSA1)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Infineon-Technologies/BFP620H7764XTSA1?qs=K00xGehIljsJB9eGzWKrqA%3D%3D)
+~!Manufacturer_Name (Infineon)
+~!Manufacturer_Part_Number (BFP620H7764XTSA1)
+~!Link Datasheet (https://www.infineon.com/dgdl/Infineon-BFP620-DS-v02_00-EN.pdf?fileId=5546d462689a790c01690f0396db3924)
+~!Height (1mm)
+BFP620H7764XTSA1
+1.1!U 2.1!U 3.1!U 4.1!U 

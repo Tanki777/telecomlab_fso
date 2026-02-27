@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "CONSMA001-G"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2025-03-31-08:54:43)
+    (mountForm default
+        (footprintRef "CONSMA001G")
+        (spec "System")
+    )
+)

@@ -1,0 +1,115 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "OPV302"
+   (description "OPTEK TECHNOLOGY - OPV302 - LASER DIODE")
+   (family "DIO")
+   (package "OPV302")
+   (attribute "Datasheet Link" "https://componentsearchengine.com/Datasheets/1/OPV302.pdf")
+   (attribute "Geometry.Height" "6.604mm")
+   (attribute "Mouser Part Number" "828-OPV302")
+   (attribute "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Optek-TT-Electronics/OPV302?qs=NVJATC80C48ntzd%252Borxscg%3D%3D")
+   (attribute "Manufacturer_Name" "TT Electronics")
+   (attribute "Manufacturer_Part_Number" "OPV302")
+   (gate
+    (symbol "OPV302")
+    (pin "VCSEL_ANODE" 1 PS)
+    (pin "VCSEL_CATHODE" 2 PS)
+    (pin "NO_CONNECTION" 3 PS)
+   )
+  )
+  (symbol "OPV302"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 200 100) (pt 1800 100) (pt 1800 -200) (pt 200 -200) (pt 200 100) (closed))
+   )
+   (terminal
+    (body (symbol "PIN") (pt 2000 0) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 0) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 2000 -100) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "OPV302"
+   (units MM)
+   (layer OCCA
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -2.518 -3.788)
+      (pt 5.058 -3.788)
+      (pt 5.058 3.788)
+      (pt -2.518 3.788)
+      (pt -2.518 -3.788))))
+   (layer TASM
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -1.518 -0)
+      (arc (pt -1.518 -0.000) (pt -1.518 2.788) (pt 4.058 -2.788) (start 180.0) (sweep 180.0))
+      (pt 4.058 -0)
+      (arc (pt 4.058 -0.000) (pt -1.518 2.788) (pt 4.058 -2.788) (start 180.0) (sweep -.0))
+      (pt -1.518 -0))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed true)
+      (pt -1.518 -0)
+      (arc (pt -1.518 -0.000) (pt -1.518 2.788) (pt 4.058 -2.788) (start 180.0) (sweep -180.0))
+      (pt 4.058 0)
+      (arc (pt 4.058 0.000) (pt -1.518 2.788) (pt 4.058 -2.788) (start 180.0) (sweep -.0))
+      (pt -1.518 0))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt -2.1 0)
+      (arc (pt -2.100 0.000) (pt -2.100 0.050) (pt -2.000 -0.050) (start 180.0) (sweep 180.0))
+      (pt -2 -0)
+      (arc (pt -2.000 -0.000) (pt -2.100 0.050) (pt -2.000 -0.050) (start 180.0) (sweep -.0))
+      (pt -2.1 -0)
+      (arc (pt -2.100 -0.000) (pt -2.100 0.050) (pt -2.000 -0.050) (start 180.0) (sweep 180.0))
+      (pt -2 -0))))
+   (leg 1 (pt 0.000 0.000) (padstack 0))
+   (leg 2 (pt 1.270 -1.270) (padstack 0))
+   (leg 3 (pt 2.540 0.000) (padstack 0))
+   (padstack 0
+    (hole 0.6445)
+    (plated true)
+    (pad (layer TCOP) (round 1.182))
+    (pad (layer INNER) (round 1.182))
+    (pad (layer BCOP) (round 1.182))
+   )
+   (model "OPV302.stp"
+    (euler 90 0 0)
+    (offset 1.2699999809265137 0 0)
+   )
+  )
+ )
+)

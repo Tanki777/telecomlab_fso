@@ -1,0 +1,323 @@
+(footprint "BFP620H7764XTSA1"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "SOT343_2023-1")
+	(tags "Transistor BJT NPN")
+	(property "Reference" "REF**"
+		(at -1.85 -2.25 0)
+		(layer "F.SilkS")
+		(uuid "5fe6de75-9679-4ce3-99c9-bc32c91c1881")
+		(effects
+			(font
+				(size 0.75 0.75)
+				(thickness 0.125)
+			)
+		)
+	)
+	(property "Value" "BFP620H7764XTSA1"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "13ba8761-2795-4866-83c3-0924d070f7b6")
+		(effects
+			(font
+				(size 0.75 0.75)
+				(thickness 0.125)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.infineon.com/dgdl/Infineon-BFP620-DS-v02_00-EN.pdf?fileId=5546d462689a790c01690f0396db3924"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6d55a4d1-a18a-4fe4-a9a5-633312d78ef5")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "RF Bipolar Transistors RF BIP TRANSISTOR"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4100f478-b6f5-4b76-a245-d3a3680530be")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Height" "1"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "57791986-011c-4886-9525-90a31190fc47")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Mouser Part Number" "726-BFP620H7764XTSA1"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8f1ce791-a278-45f5-9f78-6668aa455495")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Infineon-Technologies/BFP620H7764XTSA1?qs=K00xGehIljsJB9eGzWKrqA%3D%3D"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "17e7a0c9-5ad2-45ae-aaac-e30e33ac1b49")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Manufacturer_Name" "Infineon"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "db06cee5-9f19-4a28-b838-6879ea542de1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Manufacturer_Part_Number" "BFP620H7764XTSA1"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "68f761dc-8024-4d4e-92c8-edb14866456d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Sim.Pins" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "dfe9c8db-5bd0-453b-a4ae-9d0a33c89fa7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -1 -0.4)
+		(end -1 0.4)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "eebb1a6c-8584-4efb-8454-c9de8e5fea31")
+	)
+	(fp_line
+		(start -0.65 1.8)
+		(end -0.65 1.8)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e0051879-10d5-4c99-a482-804170e775fd")
+	)
+	(fp_line
+		(start -0.65 1.9)
+		(end -0.65 1.9)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "88359400-b9af-4c9e-b3f8-d3c460014673")
+	)
+	(fp_line
+		(start 1 -0.4)
+		(end 1 0.4)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "69d63220-10c8-4fcf-a140-e63aa78c4fb2")
+	)
+	(fp_arc
+		(start -0.65 1.8)
+		(mid -0.6 1.85)
+		(end -0.65 1.9)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "2027fd7b-b6cd-405b-966e-fbeb80208ee0")
+	)
+	(fp_arc
+		(start -0.65 1.9)
+		(mid -0.7 1.85)
+		(end -0.65 1.8)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "7b9cbb48-25e9-436a-b0a8-3a991ae9b028")
+	)
+	(fp_line
+		(start -2 -2.3)
+		(end 2 -2.3)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "f3301bff-0bb3-48ad-a880-82ed7ea8078e")
+	)
+	(fp_line
+		(start -2 2.3)
+		(end -2 -2.3)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "fbf84a62-c349-44b2-a1a0-55609a8323aa")
+	)
+	(fp_line
+		(start 2 -2.3)
+		(end 2 2.3)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "b276fbaf-37c6-4453-8bbf-001348fddd9d")
+	)
+	(fp_line
+		(start 2 2.3)
+		(end -2 2.3)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "5bde7cd2-a0b7-4dde-b1af-70dfeb7eb43d")
+	)
+	(fp_line
+		(start -1 -0.625)
+		(end 1 -0.625)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "c7883b25-14d2-4572-867c-7be445123d76")
+	)
+	(fp_line
+		(start -1 0.625)
+		(end -1 -0.625)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "4939cec0-419b-4c23-87b9-d81c0c1d7c3d")
+	)
+	(fp_line
+		(start 1 -0.625)
+		(end 1 0.625)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "5f76d0b6-dd34-4646-802f-b430be23b106")
+	)
+	(fp_line
+		(start 1 0.625)
+		(end -1 0.625)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "4e37edd2-1801-47f6-940b-55715dd326e5")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "8a37510a-af84-4662-8c21-ba99dc238eb5")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -0.65 1.01)
+		(size 0.5 0.58)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "5adb91e1-25c7-4c22-b813-1c4b7e8cf2a5")
+	)
+	(pad "2" smd rect
+		(at 0.5 1.01 90)
+		(size 0.58 0.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "4cb6b441-cd72-4096-8c53-eb5bf8df2e81")
+	)
+	(pad "3" smd rect
+		(at 0.65 -1.01)
+		(size 0.5 0.58)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "e4fae584-7014-4dee-85e0-98e6eaca8e30")
+	)
+	(pad "4" smd rect
+		(at -0.65 -1.01)
+		(size 0.5 0.58)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "dd073964-a814-4793-98ac-2e6657ee1361")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/ecad/BFP620H7764XTSA1/3d/SOT343-4.STEP"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -0)
+		)
+	)
+)

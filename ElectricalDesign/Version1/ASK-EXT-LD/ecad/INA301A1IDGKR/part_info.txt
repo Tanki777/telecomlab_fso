@@ -1,0 +1,9 @@
+Manufacturer=Texas Instruments
+PartNumber=INA301A1IDGKR
+PartCategory=Integrated Circuit
+PackageCategory=Small Outline Packages
+PinCount=8
+Version=1.1
+Released=2020-04-17 06:31:34
+Downloaded=2025-11-03 11:49:40
+3D=Y

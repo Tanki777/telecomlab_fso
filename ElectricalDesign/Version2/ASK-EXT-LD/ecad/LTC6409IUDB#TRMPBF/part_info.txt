@@ -1,0 +1,9 @@
+Manufacturer=Analog Devices
+PartNumber=LTC6409IUDB#TRMPBF
+PartCategory=Integrated Circuit
+PackageCategory=Other
+PinCount=11
+Version=1.2
+Released=2018-11-07 11:17:14
+Downloaded=2025-11-02 17:56:44
+3D=Y

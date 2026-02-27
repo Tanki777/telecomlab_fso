@@ -1,0 +1,324 @@
+(footprint "SOP50P490X110-11N"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "MSE Package  LTC DWG 10-Lead Plastic MSOP, Exposed Die Pad_1")
+	(tags "Integrated Circuit")
+	(property "Reference" "REF**"
+		(at 4.038707 -1.274293 0)
+		(layer "F.SilkS")
+		(uuid "544156a3-1381-487d-ad2e-1471f3dc2a59")
+		(effects
+			(font
+				(size 0.75 0.75)
+				(thickness 0.125)
+			)
+		)
+	)
+	(property "Value" "LT3042EMSE#PBF"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "435a5b84-2da7-4b30-9d95-7952e092416d")
+		(effects
+			(font
+				(size 0.75 0.75)
+				(thickness 0.125)
+			)
+		)
+	)
+	(property "Datasheet" "http://www.linear.com/docs/46159"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "19e8b2b9-83dd-47e9-a058-ff55dc50c553")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "LINEAR TECHNOLOGY - LT3042EMSE#PBF - LDO, ADJ, 0.2A, 0V-15V, MSOP-10"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "1edfa9ee-1ca3-4446-9424-d6811fbd427b")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Height" "1.1"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "743d5f45-cfd3-4a0f-a189-b782f7887c85")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Mouser Part Number" "584-LT3042EMSE#PBF"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b496a3e4-d80c-45e1-b7ab-4a31ae4a190f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Analog-Devices/LT3042EMSEPBF?qs=oahfZPh6IAJ3XP16d20ITw%3D%3D"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "150b62f2-ffc1-4abc-b577-b0b7c4f223d1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Manufacturer_Name" "Analog Devices"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "597a5861-afad-4ad4-8311-b1e956858054")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Manufacturer_Part_Number" "LT3042EMSE#PBF"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e51b940e-196d-448b-b54b-e9fab29cb5c5")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Sim.Pins" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "1669320c-88c7-4c2e-9cd6-ec1643030f01")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -2.925 -1.5)
+		(end -1.5 -1.5)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c3740601-7777-4bff-8a7d-7baf704da64b")
+	)
+	(fp_line
+		(start -3.175 -1.801)
+		(end 3.175 -1.801)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "7d7f3a1d-249d-4e95-863d-dfcb7db4d1c8")
+	)
+	(fp_line
+		(start -3.175 1.801)
+		(end -3.175 -1.801)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "3b8d679a-8b87-49e9-a9f4-9f1ed41f5139")
+	)
+	(fp_line
+		(start 3.175 -1.801)
+		(end 3.175 1.801)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "0cafa912-8725-4e10-bcd8-32b2cda8dbac")
+	)
+	(fp_line
+		(start 3.175 1.801)
+		(end -3.175 1.801)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "f8387f2d-9cff-474c-896c-4c94934a6db8")
+	)
+	(fp_line
+		(start -1.5 -1.5)
+		(end 1.5 -1.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "9f1332b4-60db-457d-8c08-a867fa3bb81f")
+	)
+	(fp_line
+		(start -1.5 -1)
+		(end -1 -1.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "43274567-39b0-4f56-a08f-c292c3f83c8a")
+	)
+	(fp_line
+		(start -1.5 1.5)
+		(end -1.5 -1.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "ee73a2ff-8fb0-412d-a492-b714e737ab2e")
+	)
+	(fp_line
+		(start 1.5 -1.5)
+		(end 1.5 1.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "d48e3c4c-b1ec-48dd-8c20-bbd4e353c059")
+	)
+	(fp_line
+		(start 1.5 1.5)
+		(end -1.5 1.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "19124fc0-2088-473a-80ad-6dd1002de185")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "935f669a-d63a-4dd6-b685-69f1c2ed59fa")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -2.212 -1 90)
+		(size 0.3 1.425)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "0d157f23-d96a-409e-9759-6624bddbc66a")
+	)
+	(pad "2" smd rect
+		(at -2.212 -0.5 90)
+		(size 0.3 1.425)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "62006de0-81a6-4c92-87e9-477125d79f3d")
+	)
+	(pad "3" smd rect
+		(at -2.212 0 90)
+		(size 0.3 1.425)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "bdebd386-d736-44a0-a93a-d433aba9e4a2")
+	)
+	(pad "4" smd rect
+		(at -2.212 0.5 90)
+		(size 0.3 1.425)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "042b82d6-1823-4daf-b605-a4dba43ecd19")
+	)
+	(pad "5" smd rect
+		(at -2.212 1 90)
+		(size 0.3 1.425)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "1ec2b8a6-9443-46cf-83c9-578fc9fd1a73")
+	)
+	(pad "6" smd rect
+		(at 2.212 1 90)
+		(size 0.3 1.425)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "ff75d0bd-dc21-43be-a363-78dd2ab1d6b5")
+	)
+	(pad "7" smd rect
+		(at 2.212 0.5 90)
+		(size 0.3 1.425)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "dbd0ca6e-4eb0-47f6-bdd9-e864c28c130a")
+	)
+	(pad "8" smd rect
+		(at 2.212 0 90)
+		(size 0.3 1.425)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "94b7ed5b-b1a2-40ff-8e87-459492f03ac8")
+	)
+	(pad "9" smd rect
+		(at 2.212 -0.5 90)
+		(size 0.3 1.425)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "7fa7b619-bfea-45a2-b6e6-be49f110cfa3")
+	)
+	(pad "10" smd rect
+		(at 2.212 -1 90)
+		(size 0.3 1.425)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "def13c6f-c34a-44f3-a972-3c9ec45a7351")
+	)
+	(pad "11" smd rect
+		(at 0 0)
+		(size 1.68 1.88)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(thermal_bridge_angle 65)
+		(uuid "f14ae1fa-c5d7-4f86-8a73-23b1e21dead3")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/ecad/LT3042EMSE#PBF/3D/LT3042EMSE#PBF.stp"
+		(offset
+			(xyz 0 0 0.5)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -0)
+		)
+	)
+)

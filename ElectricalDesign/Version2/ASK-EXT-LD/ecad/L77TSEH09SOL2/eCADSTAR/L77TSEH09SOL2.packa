@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "L77TSEH09SOL2"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2019-06-19-12:18:06)
+    (mountForm default
+        (footprintRef "L77TSEH09SOL2")
+        (spec "System")
+    )
+)

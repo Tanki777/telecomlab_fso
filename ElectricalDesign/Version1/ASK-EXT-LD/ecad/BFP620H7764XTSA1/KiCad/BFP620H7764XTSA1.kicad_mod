@@ -1,0 +1,245 @@
+(footprint "BFP620H7764XTSA1"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "SOT343_2023-1")
+	(tags "Transistor BJT NPN")
+	(property "Reference" "Q**"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(uuid "1efcfd39-c98c-4486-a3c6-2d88c9483359")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Value" "BFP620H7764XTSA1"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "daa541da-26f2-4f70-9258-74f47e35358a")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "1b2d1e8e-bb2a-43e9-a11a-112630c18855")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d01cd576-085d-4290-a7cf-a0066211221e")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -1 -0.4)
+		(end -1 0.4)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "98b31012-3824-4524-9ece-738ce794955e")
+	)
+	(fp_line
+		(start -0.65 1.8)
+		(end -0.65 1.8)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ed351f3e-c3e5-4059-b2df-4d98291892e8")
+	)
+	(fp_line
+		(start -0.65 1.9)
+		(end -0.65 1.9)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "7950a7d9-2abf-412e-b35c-28494cb40efb")
+	)
+	(fp_line
+		(start 1 -0.4)
+		(end 1 0.4)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "4643c1de-bfa2-48a5-a005-38ac34ab0c8e")
+	)
+	(fp_arc
+		(start -0.65 1.8)
+		(mid -0.6 1.85)
+		(end -0.65 1.9)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "72b932f3-9de3-4f0e-a795-798e3db51904")
+	)
+	(fp_arc
+		(start -0.65 1.9)
+		(mid -0.7 1.85)
+		(end -0.65 1.8)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "7119140b-1a62-4063-969a-f9b487d9f6b1")
+	)
+	(fp_line
+		(start -2 -2.3)
+		(end 2 -2.3)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "abb36db5-4acb-497a-99a2-b931df90b4c8")
+	)
+	(fp_line
+		(start -2 2.3)
+		(end -2 -2.3)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "6b621fee-31c8-48a0-bc97-fbe3dbb95952")
+	)
+	(fp_line
+		(start 2 -2.3)
+		(end 2 2.3)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "07138b94-5c1b-4260-a12b-49329a1d71f9")
+	)
+	(fp_line
+		(start 2 2.3)
+		(end -2 2.3)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "140a191d-1d82-479f-8600-8c6213eee17c")
+	)
+	(fp_line
+		(start -1 -0.625)
+		(end 1 -0.625)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "e25b9b95-d06b-4b35-9ad7-d587e5363c88")
+	)
+	(fp_line
+		(start -1 0.625)
+		(end -1 -0.625)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "543cba10-80fc-4e48-a4ac-5bc266088647")
+	)
+	(fp_line
+		(start 1 -0.625)
+		(end 1 0.625)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "a7fc5b9e-0ee2-4e80-89df-116a318a8cfe")
+	)
+	(fp_line
+		(start 1 0.625)
+		(end -1 0.625)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "09873ce3-cc47-4cb6-a45f-a2c43d4001b7")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "80e1a5a0-6f48-4176-89f5-4e35fa02d5e3")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -0.65 1.01)
+		(size 0.5 0.58)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "648b93ef-043e-4cef-9488-3cc722249507")
+	)
+	(pad "2" smd rect
+		(at 0.5 1.01 90)
+		(size 0.58 0.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "9af3124e-378b-408f-87c4-b004d1ff99ba")
+	)
+	(pad "3" smd rect
+		(at 0.65 -1.01)
+		(size 0.5 0.58)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "37ac1de7-8ff4-474f-85be-8444d5379677")
+	)
+	(pad "4" smd rect
+		(at -0.65 -1.01)
+		(size 0.5 0.58)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "356b1f90-498b-4952-9006-a7587e51c668")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/ecad/BFP620H7764XTSA1/3d/SOT343-4.STEP"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -0)
+		)
+	)
+)

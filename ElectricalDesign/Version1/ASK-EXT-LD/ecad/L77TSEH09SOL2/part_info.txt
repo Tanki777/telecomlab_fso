@@ -1,0 +1,9 @@
+Manufacturer=Amphenol Communications Solutions
+PartNumber=L77TSEH09SOL2
+PartCategory=Connector
+PackageCategory=Other
+PinCount=9
+Version=8.3
+Released=2019-06-19 12:18:06
+Downloaded=2025-11-14 18:00:06
+3D=Y
