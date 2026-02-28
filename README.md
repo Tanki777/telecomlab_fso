@@ -5,7 +5,8 @@ This repository contains all GNU Radio flowgraphs, Matlab and python scripts tha
 1. [GNU Radio flowgraphs](#1-gnu-radio-flowgraphs)
 2. [Matlab scripts](#2-matlab-scripts)
 3. [Utility scripts](#3-utility-scripts)
-4. [Troubleshooting](#4-troubleshooting)
+4. [Electrical connections](#4-Electrical connections)
+5. [Troubleshooting](#5-troubleshooting)
 
 ## 1. GNU Radio flowgraphs
 If you are new to GNU Radio, it is recommended to have a look at the official [tutorials](https://wiki.gnuradio.org/index.php/Tutorials) first. After that, the following descriptions will be easier to understand.  
@@ -145,11 +146,18 @@ Before using the script, it should be configured as follows.
 - Edit the name of the received file.
 - Edit the list of numbers to be checked to match the transmitted file content.
 
-# 4. Troubleshooting
+# 4. Electrical connections
+All the design files are available in the folder "ElectricalDesign", which is subdivided into "Version 1" and "Version 2". The first is the one used during our tests. The second is the improved version with all the problems we encountered fixed, plus some other nice features like pin names, use of rule areas, fixed voltage reference for the amplifier, but with the possibility to switch back to the DAC if needed, and monitor of the amplifier voltage directly from VBUS of INA226, while shunt voltage keeps reading the photodiode resistor voltage. Moreover pull-up resistors were added.
 
-## 4.1 General
+# 5. Troubleshooting
 
-## 4.2 GNU Radio flowgraphs
+## 5.1 General
+
+**Q:** Impossible to find DAC or ADC or setup is not successfu (error from the code).
+**A:** Check that that the 2 wires of I2C are connected properly SDA->SDA SCL->SCL, check to have a ground connection between the Arduino and the receiver, in case you are using an external power supply. If this is ok then if you are using an Arduino Uno R4 you need external pullup resistors (from 2.2k to 20k connected to 5V or 3.3V). If you are using an Arduino Mega check which I2C pair you are using, there are many! If free always choose the first couple, located at pin 20 and 21. 
+The schematics annotated of the first version are available in  ``ElectricalDesign/Version1/Pinout Receiver.png``, for the second version the pins are annotated in the silkscreen.
+
+## 5.2 GNU Radio flowgraphs
 **Q:** The signal is bad, what could be wrong?
 **A:** Check if the laser is on (also the current). Check the laser alignment towards the receiver. Check the attenuation of the ``PlutoSDR Sink`` block and set it to 0 dB (**not** if TX and RX directly connected to each other via SMA cable). Check that the IP addresses of the SDRs are configured correctly in the ``PlutoSDR Sink`` and ``PlutoSDR Source`` blocks.
 
