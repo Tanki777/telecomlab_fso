@@ -5,7 +5,7 @@ This repository contains all GNU Radio flowgraphs, Matlab and python scripts tha
 1. [GNU Radio flowgraphs](#1-gnu-radio-flowgraphs)
 2. [Matlab scripts](#2-matlab-scripts)
 3. [Utility scripts](#3-utility-scripts)
-4. [Electrical connections](#4-Electrical connections)
+4. [Electrical connections](#4-electrical-connections)
 5. [Troubleshooting](#5-troubleshooting)
 
 ## 1. GNU Radio flowgraphs
