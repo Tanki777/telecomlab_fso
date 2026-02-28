@@ -96,6 +96,15 @@ When testing flowgraphs and if the TX and RX SMA connectors of the SDRs are dire
 
 ## 2. Matlab scripts
 
+## 2.1 OFDM
+To test the optical channel with more complex modulation schemes, a MATLAB help example (see https://it.mathworks.com/help/lte/ug/image-transmission-reception-using-lte-waveform-and-sdr.html for the original example) was adapted for the setup. This script encodes and packs an image into a radio frame. A baseband LTE signal with OFDM modulation is transmitted. The signal is then received, and the frequency offset is determined. After OFDM demodulation, a channel estimation is performed, and the payload of the received packets is recombined to form the received image.
+OFDM subcarriers were modulated using 64-QAM (in the uploaded code, like in the original example), and 16-QAM. 
+
+
+## 2.2 Pre-Processed Binary File Transmission
+In the folder there are the Matlab codes used to create packets from the binary file generated from the image 'capra.jpg', 'transmit_packets.m', and to post-process the file after it has been received, 'read_received.m', that recreates the image. The folder 'transmitted_file' contains the packeted file, the folder 'received_files' contains the successfully received files, before post-processing.
+
+
 ## 3. Utility scripts
 
 ### 3.1 Post-processing for file transmission using GNU Radio flowgraph
