@@ -44,16 +44,17 @@ The ``Probe Rate`` block regularly prints the bit rate to the terminal.
 #### 1.1.2 General File transmission
 This section refers to the flowgraphs ``pluto_bpsk_tx/rx.grc``, ``pluto_qpsk_tx/rx.grc`` and ``pluto_8psk_tx/rx.grc``. The diagram images can be found here: [pluto_bpsk_tx.pdf](GNU_Radio/Images/pluto_bpsk_tx.pdf), [pluto_bpsk_rx.pdf](GNU_Radio/Images/pluto_bpsk_rx.pdf), [pluto_qpsk_tx.pdf](GNU_Radio/Images/pluto_qpsk_tx.pdf), [pluto_qpsk_rx.pdf](GNU_Radio/Images/pluto_qpsk_rx.pdf), [pluto_8psk_tx.pdf](GNU_Radio/Images/pluto_8psk_tx.pdf), [pluto_8psk_rx.pdf](GNU_Radio/Images/pluto_8psk_rx.pdf).
 
-These flowgraphs transmit any file, implementing the packeting inside the flowgraph. In contrast to repeated source transmission, the receiver should be turned on before the transmitter. Thus, the flowgraphs are splitted into a transmitter and receiver.
+These flowgraphs transmit any file, implementing the packeting inside the flowgraph. In contrast to repeated source transmission, the receiver should be turned on before the transmitter. Thus, the flowgraphs are splitted into a transmitter and receiver.  
+A GNU Radio [tutorial](https://wiki.gnuradio.org/index.php?title=File_transfer_using_Packet_and_BPSK&oldid=14511)[^old_version] was used as a starting point (author: Dubbage) and modified.
 
 **Transmitter:**  
 A HIER block ``File Source Packaged`` is used to read the file which should be transmitted and does the following (the diagram image can be found here: [hier_file_source_packaged.pdf](GNU_Radio/Images/hier_file_source_packaged.pdf)).
 
 - It starts with an embedded python block ``EPB: File Source to Tagged Stream``, which first sends a preamble 64 times, then sends the file data in packets (each packet contains as many bytes as configured in the ``Pkt_len`` parameter of the ``File Source Packaged`` block). In front of each file data packet, the packet number is put. At the end, an end of file marker, the file name and a repeated post filler (64 times) is sent. A tag with the (new) packet length is also applied to make it a tagged stream (required by other blocks later). 
 While the file data is encoded in Base64, everything else (including the packet number) is not encoded. The encoded file data packet is 4/3 as long as the decoded one, since Base64 encodes 3 Bytes into 4 Bytes.  
-The **preamble** is ``&U...U]`` (50 times U), the **packet number frame** ``[000001]`` (always 6 digits, therefore a maximum of 999,999 packets are possible. This means a maximum file size of 999,999 times Pkt_len bytes. If larger files are desired, increase packet length or adjust packet number frame.), the **end of file marker** ``TODO``, the **post filler** ``TODO``.
+The **preamble** is ``&U...U]`` (50 times U), the **packet number frame** ``[000001]`` (always 6 digits, therefore a maximum of 999,999 packets are possible. This means a maximum file size of 999,999 times Pkt_len bytes. If larger files are desired, increase packet length or adjust packet number frame.), the **end of file marker** ``%UUU#EOF`` (followed by the file name), the **post filler** ``%UUU#EOF`` followed by 43 times the character ``U`` and ending with ``]``.
 - After the embedded python block, a CRC32 code is also attached to each packet by the ``Stream CRC32`` block to detect errors at the receiver. The ``Mode`` parameter must be set to generate.
-- Finally a header is also attached (including the access key ``TODO``) using the ``Protocol Formatter`` and ``Tagged Stream Mux`` blocks. The access key is used at the receiver for correlation.
+- Finally a header is also attached (including the access key ``11100001010110101110100010010011``) using the ``Protocol Formatter`` and ``Tagged Stream Mux`` blocks. The access key is used at the receiver for correlation.
 
 As in random source transmission, the data is modulated by the ``Constellation Modulator`` block using a ``Constellation Object`` (which is configured depending on the number of constellation points). For more details, see the previous section.
 
@@ -86,9 +87,7 @@ A HIER block ``File Sink Unpackaged mod_scheme`` is used to perform further acti
 The ``File Sink Unpackaged mod_scheme`` block also outputs the input and output signal of the ``Correlate Access Code - Tag Stream`` block, comparing them in ``QT GUI Time Sink`` blocks. If, during transmission, there is an input signal but no output signal, the access code correlation failed and the packet is dropped. If there is no output signal visible during the entire transmission, it indicates something is wrong with the flowgraph.
 
 #### 1.1.3 File transmission using pre-processed .bin files
-This section refers to the flowgraphs ``raw_file_bpsk.grc``, ``raw_file_qpsk.grc`` and ``raw_file_8psk.grc``. The diagram images can be found here: [raw_file_bpsk.pdf](GNU_Radio/Images/raw_file_bpsk.pdf), [raw_file_qpsk.pdf](GNU_Radio/Images/raw_file_qpsk.pdf), [raw_file_8psk.pdf](GNU_Radio/Images/raw_file_8psk.pdf).
-
-TODO?
+This section refers to the flowgraphs ``raw_file_bpsk_tx/rx.grc`` and ``raw_file_qpsk_tx/rx.grc``. The diagram images can be found here: [raw_file_bpsk_tx.pdf](GNU_Radio/Images/raw_file_bpsk_tx.pdf), [raw_file_bpsk_rx.pdf](GNU_Radio/Images/raw_file_bpsk_rx.pdf), [raw_file_qpsk_tx.pdf](GNU_Radio/Images/raw_file_qpsk_tx.pdf), [raw_file_qpsk_rx.pdf](GNU_Radio/Images/raw_file_qpsk_rx.pdf).
 
 
 ### 1.2 Important notes using Pluto SDR
