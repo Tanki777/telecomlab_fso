@@ -147,7 +147,20 @@ Before using the script, it should be configured as follows.
 - Edit the list of numbers to be checked to match the transmitted file content.
 
 # 4. Electrical connections
+##4.1 Electrical schematics
 All the design files are available in the folder "ElectricalDesign", which is subdivided into "Version 1" and "Version 2". The first is the one used during our tests. The second is the improved version with all the problems we encountered fixed, plus some other nice features like pin names, use of rule areas, fixed voltage reference for the amplifier, but with the possibility to switch back to the DAC if needed, and monitor of the amplifier voltage directly from VBUS of INA226, while shunt voltage keeps reading the photodiode resistor voltage. Moreover pull-up resistors were added.
+For the first version the 3 pins on the right of the receiver (SMA down) can't be used to set the voltage to the linear converter, if you want to do so remove first the DAC. Consider that SET pin provides a constant current, handle with care this connection! (Use a resistor) The central pin is a ground reference
+
+## 4.2 Electrical connections
+To connect the Arduino with the receiver you can simply connect grount to the lowermost pin (always SMA down), then moving up 5V, SDA, SCL as shown [here](ElectricalDesign/Version1/Pinout Receiver.png). On the Arduino side, if using an Arduino Mega 2560, use pin 20 for SDA and 21 for SCL. In case of Arduino Uno, connect SDA to A4 and SCL to A5, if using R4 version add pull-up resistors from the data lines to 5V or to 3.3V! You can connect 5V to Arduino's 5V pins and remember to always connect ground to the board and Arduino, even if using an external power supply.
+Connect the SMA connector to the receiver port of your radio with a suitable cable.
+
+To connect the transmitter use the given cable (D-SUB connectors), and connect it to the laser driver. The cable has a mark to indicate the transmitter (laser) side. If you want to use a desk power supply (only 1M OPV310!) connect the cable as described before, then add the cut cable and connector available in the box. On the wires cut there is a marking for "LS" Laser, "PD" Photodiode, and GND for Ground. Always use a multimeter in current mode to check the current that should never exceed 7mA. Connect the multimeter in series to the transmitter. DO NOT TRUST THE CURRENT READINGS OF THE POWER SUPPLY, might damage the laser and exceed the 1M cathegory.
+Connect the SMA connector to the trasmitter port of the radio using a suitable connection
+
+## 4.3 Alignment
+To align the recevier you can run the program ``ADD LINK ARDUINO PROGRAM`` on the Arduino connected to the receiver while leaving only  ``INA.getShuntVoltage_uV();`` and its print not commented. Run the program and open the serial plotter, this will show the average voltage of the resistor connected to the photodiode, the more light enters the photodiode the greater the current it will let pass, the higher the voltage of the resistor will be. Start roughly aligning the transmitter and the receiver, you can help yourself with a phone camera, they usually seee in the NIR spectrum. after the rough alignment you can then check the serial plotter and try to reach the maximum value by moving both the receiver and transmitter set screws. Beware of local maxima, OPV302 has an output light concentration donut shaped, with the maximas on the outer part. Expect values around 1600uV for 6mA on the laser, with a receiver lens, and at oughly 1m, check the report for other values.
+You can also calculate the current of the photodiode by dividing the voltage by 50, the resistance value of the resistor of the photodiode. with the current you could calculate the power that enters the photodiode, at 850nm you can divide the current by 0.3 to find the input power, check the datasheet for other wavelengths.
 
 # 5. Troubleshooting
 
@@ -155,7 +168,7 @@ All the design files are available in the folder "ElectricalDesign", which is su
 
 **Q:** Impossible to find DAC or ADC or setup is not successfu (error from the code).
 **A:** Check that that the 2 wires of I2C are connected properly SDA->SDA SCL->SCL, check to have a ground connection between the Arduino and the receiver, in case you are using an external power supply. If this is ok then if you are using an Arduino Uno R4 you need external pullup resistors (from 2.2k to 20k connected to 5V or 3.3V). If you are using an Arduino Mega check which I2C pair you are using, there are many! If free always choose the first couple, located at pin 20 and 21. 
-The schematics annotated of the first version are available in  ``ElectricalDesign/Version1/Pinout Receiver.png``, for the second version the pins are annotated in the silkscreen.
+The schematics annotated of the first version are available [here](ElectricalDesign/Version1/Pinout Receiver.png), for the second version the pins are annotated in the silkscreen.
 
 ## 5.2 GNU Radio flowgraphs
 **Q:** The signal is bad, what could be wrong?
