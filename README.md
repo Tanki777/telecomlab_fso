@@ -157,7 +157,7 @@ Before using the script, it should be configured as follows.
 - Edit the list of numbers to be checked to match the transmitted file content.
 
 # 4. Electrical connections
-##4.1 Electrical schematics
+## 4.1 Electrical schematics
 All the design files are available in the folder "ElectricalDesign", which is subdivided into "Version 1" and "Version 2". The first is the one used during our tests. The second is the improved version with all the problems we encountered fixed, plus some other nice features like pin names, use of rule areas, fixed voltage reference for the amplifier, but with the possibility to switch back to the DAC if needed, and monitor of the amplifier voltage directly from VBUS of INA226, while shunt voltage keeps reading the photodiode resistor voltage. Moreover pull-up resistors were added.
 For the first version the 3 pins on the right of the receiver (SMA down) can't be used to set the voltage to the linear converter, if you want to do so remove first the DAC. Consider that SET pin provides a constant current, handle with care this connection! (Use a resistor) The central pin is a ground reference
 
