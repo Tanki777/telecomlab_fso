@@ -177,12 +177,16 @@ You can also calculate the current of the photodiode by dividing the voltage by 
 ## 5.1 General
 
 **Q:** Impossible to find DAC or ADC or setup is not successfu (error from the code).
+
 **A:** Check that that the 2 wires of I2C are connected properly SDA->SDA SCL->SCL, check to have a ground connection between the Arduino and the receiver, in case you are using an external power supply. If this is ok then if you are using an Arduino Uno R4 you need external pullup resistors (from 2.2k to 20k connected to 5V or 3.3V). If you are using an Arduino Mega check which I2C pair you are using, there are many! If free always choose the first couple, located at pin 20 and 21. 
 The schematics annotated of the first version are available [here](ElectricalDesign/Version1/Pinout Receiver.png), for the second version the pins are annotated in the silkscreen.
 
 ## 5.2 GNU Radio flowgraphs
 **Q:** The signal is bad, what could be wrong?
+
 **A:** Check if the laser is on (also the current). Check the laser alignment towards the receiver. Check the attenuation of the ``PlutoSDR Sink`` block and set it to 0 dB (**not** if TX and RX directly connected to each other via SMA cable). Check that the IP addresses of the SDRs are configured correctly in the ``PlutoSDR Sink`` and ``PlutoSDR Source`` blocks.
 
+
 **Q:** The SDR is not detected by GNU Radio (terminal shows an error when running the flowgraph), what should i do?
+
 **A:** Check the IP addresses of the SDRs in the flowgraph, but also make sure they are correct by clicking on the SDR in file explorer and opening config.txt. The ip is listed at ``ipaddr`` under ``[NETWORK]`` (you can also change the address). Also make sure that ``usb_ethernet_mode`` under ``[SYSTEM]`` is set to rndis. If that still does not help, check the computer network (on Windows via ``ipconfig`` in the terminal). If no Ethernet adapter category is listed, the RNDIS driver might need to be reinstalled by opening the device manager → right click unknown device → update driver → browse my computer → let me pick from a list → network adapters → microsoft → remote NDIS compatible device.
