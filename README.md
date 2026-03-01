@@ -47,6 +47,7 @@ This section refers to the flowgraphs ``pluto_bpsk_tx/rx.grc``, ``pluto_qpsk_tx/
 
 These flowgraphs transmit any file, implementing the packeting inside the flowgraph. In contrast to repeated source transmission, the receiver should be turned on before the transmitter. Thus, the flowgraphs are splitted into a transmitter and receiver.  
 A GNU Radio [tutorial](https://wiki.gnuradio.org/index.php?title=File_transfer_using_Packet_and_BPSK&oldid=14511)[^old_version] was used as a starting point (author: Dubbage) and modified.
+The modulation scheme and the RB (Resource Blocks) used can be configured changing the value of ``txsim.RC``, to find the ``R.`` use the Wireless Waveform Generator Tool/App that in the "reference channel" dropdown shows the modulation scheme and Resource blocks used plus other info. Resource Blocks are important as they define the necessary bandwidth.
 
 **Transmitter:**  
 A HIER block ``File Source Packaged`` is used to read the file which should be transmitted and does the following (the diagram image can be found here: [hier_file_source_packaged.pdf](GNU_Radio/Images/hier_file_source_packaged.pdf)).
